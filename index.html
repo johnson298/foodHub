@@ -331,10 +331,9 @@
 						<!-- PAGE-HEADER -->
 						<div class="page-header">
 							<div>
-								<h1 class="page-title">Cards</h1>
+								<h1 class="page-title">Dashboard</h1>
 								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="#">Components</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Cards</li>
+									<li class="breadcrumb-item"><a href="#">Home</a></li>
 								</ol>
 							</div>
 							<div class="d-flex  ml-auto header-right-icons header-search-icon">
@@ -537,7 +536,49 @@
 									</div>
 								</div>
 							</div>
-							
+
+							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+								<div class="card">
+									<div class="card-body">
+										<h2 class="number-font">Mặt hàng bán chạy</h2>
+										<small class="text-muted">Tỷ lệ chiếm trên tổng 12,938 sản phẩm</small>
+										<div class="progress grouped h-3">
+											<div class="progress-bar w-25 bg-primary " role="progressbar"></div>
+											<div class="progress-bar w-30 bg-danger" role="progressbar"></div>
+											<div class="progress-bar w-20 bg-warning" role="progressbar"></div>
+										</div>
+										<div class="row mt-3 pt-3">
+											<div class="col border-right">
+												<p class=" number-font1 mb-0"><span class="dot-label bg-primary"></span>Thịt lợn</p>
+												<h5 class="mt-2 font-weight-semibold mb-0">250 sp</h5>
+											</div>
+											<div class="col  border-right">
+												<p class=" number-font mb-0"><span class="dot-label bg-danger"></span>Cá hồi</p>
+												<h5 class="mt-2 font-weight-semibold mb-0">1,236 sp</h5>
+											</div>
+											<div class="col">
+												<p class="number-font1 mb-0"><span class="dot-label bg-warning"></span>Thịt gà</p>
+												<h5 class="mt-2 font-weight-semibold mb-0">20,188 sp</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Doanh thu</h3>
+									</div>
+									<div class="card-body">
+										<div id="echart1" class="chart-donut chart-dropshadow"></div>
+										<div class="mt-4">
+											<span class="ml-5"><span class="dot-label bg-info mr-2"></span>Sales</span>
+											<span class="ml-5"><span class="dot-label bg-secondary mr-2"></span>Profit</span>
+											<span class="ml-5"><span class="dot-label bg-success mr-2"></span>Growth</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- COL END -->
 						</div>
 						<!-- END CONTENT -->
 
@@ -733,6 +774,10 @@
 		<!-- SPARKLINE JS-->
 		<script src="assets/js/jquery.sparkline.min.js"></script>
 
+		<!-- CHARTJS CHART JS-->
+		<script src="assets/plugins/chart/Chart.bundle.js"></script>
+		<script src="assets/plugins/chart/utils.js"></script>
+
 		<!-- CHART-CIRCLE JS-->
 		<script src="assets/js/circle-progress.min.js"></script>
 
@@ -757,6 +802,30 @@
 
 		<!-- CUSTOM JS-->
 		<script src="assets/js/custom.js"></script>
+
+
+
+
+
+
+
+		<!-- ECHART JS-->
+		<script src="assets/plugins/echarts/echarts.js"></script>
+
+		<!-- SIDE-MENU JS-->
+		<script src="assets/plugins/sidemenu/sidemenu.js"></script>
+
+		<!-- CUSTOM SCROLLBAR JS-->
+		<script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- SIDEBAR JS -->
+		<script src="assets/plugins/sidebar/sidebar.js"></script>
+
+		<!-- APEXCHART JS -->
+		<script src="assets/js/apexcharts.js"></script>
+
+		<!-- INDEX JS -->
+		<script src="assets/js/index1.js"></script>
 
 	</body>
 </html>

@@ -48,6 +48,8 @@
 
     <!--BOOTSTRAP-DATERANGEPICKER CSS-->
     <link rel="stylesheet" href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css">
+    <!-- FILE UPLODE CSS -->
+    <link href="assets/plugins/fileuploads/css/fileupload.css" rel="stylesheet" type="text/css"/>
 
     <!-- TIME PICKER CSS -->
     <link href="assets/plugins/time-picker/jquery.timepicker.css" rel="stylesheet"/>
@@ -187,7 +189,7 @@
                         <div class="dropdown profile-1">
                             <a href="#" data-toggle="dropdown" class="nav-link pr-2 leading-none d-flex">
 										<span>
-											<img src="assets/images/users/10.jpg" alt="profile-user" class="avatar  profile-user brround cover-image">
+											<img src="assets/images/users/user.jpg" alt="profile-user" class="avatar  profile-user brround cover-image">
 										</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -349,7 +351,8 @@
                         <h1 class="page-title">Sản phẩm</h1>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+                            <li class="breadcrumb-item "><a href="">Sản phẩm</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Thêm sản phẩm</li>
                         </ol>
                     </div>
                     <div class="d-flex  ml-auto header-right-icons header-search-icon">
@@ -460,7 +463,7 @@
                         <div class="dropdown profile-1">
                             <a href="#" data-toggle="dropdown" class="nav-link pr-2 leading-none d-flex">
 										<span>
-											<img src="assets/images/users/10.jpg" alt="profile-user" class="avatar  profile-user brround cover-image">
+											<img src="assets/images/users/user.jpg" alt="profile-user" class="avatar  profile-user brround cover-image">
 										</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -503,120 +506,46 @@
                 <!-- PAGE-HEADER END -->
 
                 <!-- CONTENT -->
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
                         <div class="card">
-                            <div class="card-header d-flex justify-content-between">
-                                <h3 class="card-title mr-3">Danh sách sản phẩm</h3>
-                                <div class="ml-auto pageheader-btn">
-                                    <a href="themsanpham.html" class="btn btn-success btn-icon text-white mr-2 btn-sm"><span> <i class="fe fe-plus"></i> </span> Thêm sản phẩm </a>
-                                    <a href="#" class="btn btn-danger btn-icon text-white btn-sm"> <span> <i class="fe fe-log-in"></i> </span> Export </a>
+                            <div class="card-header">
+                                <h3 class="card-title">Thông tin sản phẩm</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputname">Tên sản phẩm</label>
+                                            <input type="text" class="form-control" id="exampleInputname" placeholder="Nhập tên sản phẩm">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputname1">Giá tiền(vnđ)</label>
+                                            <input type="number" value="0" class="form-control" id="exampleInputname1" placeholder="Nhập giá tiền">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Danh mục</label>
+                                    <div>
+                                        <select class="form-control select2 custom-select" data-placeholder="Chọn danh mục" style="width: 100%;">
+                                            <option label="Chọn danh mục">Tất cả</option>
+                                            <option value="1">Thịt</option>
+                                            <option value="2">Cá</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Ảnh sản phẩm</label>
+                                    <input type="file" class="dropify" data-height="300" />
                                 </div>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table card-table table-vcenter text-nowrap">
-                                    <thead>
-                                    <tr>
-                                        <th>STT</th>
-                                        <th>Mã sản phẩm</th>
-                                        <th>Tên sản phẩm</th>
-                                        <th>Ảnh</th>
-                                        <th>Giá tiền (vnđ)</th>
-                                        <th>Danh mục</th>
-                                        <th>Mô tả</th>
-                                        <th>Tùy chỉnh</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                        <td>1</td>
-                                        <td>A019</td>
-                                        <td>Thịt lợn</td>
-                                        <td>
-                                            <span class="avatar cover-image"  data-image-src="assets/images/users/user3.jpg"></span>
-                                        </td>
-                                        <td>100.000</td>
-                                        <td>
-                                            <div class="tag">Thịt</div>
-                                        </td>
-                                        <td style="width: 200px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, sed!</td>
-                                        <td>
-                                            <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                            <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                        </td>
-                                    </tr>
-                                        <tr>
-                                        <td>1</td>
-                                        <td>A019</td>
-                                        <td>Thịt lợn</td>
-                                        <td>
-                                            <span class="avatar cover-image"  data-image-src="assets/images/users/user3.jpg"></span>
-                                        </td>
-                                        <td>100.000</td>
-                                        <td>
-                                            <div class="tag">Thịt</div>
-                                        </td>
-                                        <td style="width: 200px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, sed!</td>
-                                        <td>
-                                            <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                            <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                        </td>
-                                    </tr>
-                                        <tr>
-                                        <td>1</td>
-                                        <td>A019</td>
-                                        <td>Thịt lợn</td>
-                                        <td>
-                                            <span class="avatar cover-image"  data-image-src="assets/images/users/user3.jpg"></span>
-                                        </td>
-                                        <td>100.000</td>
-                                        <td>
-                                            <div class="tag">Thịt</div>
-                                        </td>
-                                        <td style="width: 200px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, sed!</td>
-                                        <td>
-                                            <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                            <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                        </td>
-                                    </tr>
-                                        <tr>
-                                        <td>1</td>
-                                        <td>A019</td>
-                                        <td>Thịt lợn</td>
-                                        <td>
-                                            <span class="avatar cover-image"  data-image-src="assets/images/users/user3.jpg"></span>
-                                        </td>
-                                        <td>100.000</td>
-                                        <td>
-                                            <div class="tag">Thịt</div>
-                                        </td>
-                                        <td style="width: 200px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, sed!</td>
-                                        <td>
-                                            <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                            <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                        </td>
-                                    </tr>
-                                        <tr>
-                                        <td>1</td>
-                                        <td>A019</td>
-                                        <td>Thịt lợn</td>
-                                        <td>
-                                            <span class="avatar cover-image"  data-image-src="assets/images/users/user3.jpg"></span>
-                                        </td>
-                                        <td>100.000</td>
-                                        <td>
-                                            <div class="tag">Thịt</div>
-                                        </td>
-                                        <td style="width: 200px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, sed!</td>
-                                        <td>
-                                            <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                            <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                            <div class="card-footer text-right">
+                                <a href="#" class="btn btn-success mt-1">Thêm mới</a>
+                                <a href="#" class="btn btn-danger mt-1">Hủy</a>
                             </div>
-                            <!-- table-responsive -->
                         </div>
                     </div>
                 </div>
@@ -855,6 +784,10 @@
 <script src="assets/plugins/date-picker/jquery-ui.js"></script>
 <script src="assets/plugins/input-mask/jquery.maskedinput.js"></script>
 
+<!-- FILE UPLOADES JS -->
+<script src="assets/plugins/fileuploads/js/fileupload.js"></script>
+<script src="assets/plugins/fileuploads/js/file-upload.js"></script>
+
 <!-- MULTI SELECT JS-->
 <script src="assets/plugins/multipleselect/multiple-select.js"></script>
 <script src="assets/plugins/multipleselect/multi-select.js"></script>
@@ -864,6 +797,9 @@
 
 <!-- CUSTOM JS -->
 <script src="assets/js/custom.js"></script>
+
+<!-- CUSTOM SCROLL BAR JS-->
+<script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
 
 
 </body>
