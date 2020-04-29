@@ -38,8 +38,8 @@
 		<!-- SIDEBAR CSS -->
 		<link href="assets/plugins/sidebar/sidebar.css" rel="stylesheet">
 
-		<!-- COLOR SKIN CSS -->
-		<link id="theme" rel="stylesheet" type="text/css" media="all" href="assets/colors/color1.css" />
+		<!--C3.JS CHARTS CSS -->
+		<link href="assets/plugins/charts-c3/c3-chart.css" rel="stylesheet"/>
 
 	</head>
 
@@ -78,30 +78,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="sidebar-navs">
-						<ul class="nav  nav-pills-circle">
-							<li class="nav-item" data-toggle="tooltip" data-placement="top" title="Settings">
-								<a class="nav-link text-center m-2">
-									<i class="fe fe-settings"></i>
-								</a>
-							</li>
-							<li class="nav-item" data-toggle="tooltip" data-placement="top" title="Chat">
-								<a class="nav-link text-center m-2">
-									<i class="fe fe-mail"></i>
-								</a>
-							</li>
-							<li class="nav-item" data-toggle="tooltip" data-placement="top" title="Followers">
-								<a class="nav-link text-center m-2">
-									<i class="fe fe-user"></i>
-								</a>
-							</li>
-							<li class="nav-item" data-toggle="tooltip" data-placement="top" title="Logout">
-								<a class="nav-link text-center m-2">
-									<i class="fe fe-power"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
 					<ul class="side-menu">
 						<li><h3>Main</h3></li>
 						<li >
@@ -130,9 +106,10 @@
 							</ul>
 						</li>
 						<li class="slide">
-							<a class="side-menu__item" data-toggle="slide" href="sanpham.html"><i class="side-menu__icon ti-rocket"></i><span class="side-menu__label">Sản phẩm </span><i class="angle fa fa-angle-right"></i></a>
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-rocket"></i><span class="side-menu__label">Sản phẩm </span><i class="angle fa fa-angle-right"></i></a>
 							<ul class="slide-menu">
-								<li><a href="kho.html" class="slide-item">Danh mục</a></li>
+								<li><a href="danhmuc.html" class="slide-item">Danh mục</a></li>
+								<li><a href="sanpham.html" class="slide-item">Sản phẩm</a></li>
 							</ul>
 						</li>
 						<li><h3>Marketing</h3></li>
@@ -488,59 +465,58 @@
 
 						<!-- CONTENT -->
 						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
-								<div class="row">
-									<div class="col-lg-3 col-md-3 col-sm-12">
-										<div class="card">
-											<div class="card-body text-center statistics-info">
-												<div class="counter-icon bg-primary mb-0 box-primary-shadow">
-													<i class="fe fe-dollar-sign text-white"></i>
-												</div>
-												<h6 class="mt-4 mb-1">Doanh thu</h6>
-												<h2 class="mb-2 number-font">34,516</h2>
-											</div>
+							<div class="col-sm-12 col-lg-3 col-md-3 ">
+								<div class="card">
+									<div class="card-body">
+										<h2 class="mb-1 number-font">500Tr</h2>
+										<p>Doanh thu</p>
+										<div class="progress h-2 mb-1">
+											<div class="progress-bar bg-success w-50" role="progressbar"></div>
 										</div>
+										<span class="text-muted"><span class="mb-0 text-danger fs-13"><i class="fe fe-arrow-down"></i> 26%</span> so với tháng trước</span>
 									</div>
-									<div class="col-lg-3 col-md-3 col-sm-12">
-										<div class="card">
-											<div class="card-body text-center statistics-info">
-												<div class="counter-icon bg-secondary mb-0 box-secondary-shadow">
-													<i class="fe fe-codepen text-white"></i>
-												</div>
-												<h6 class="mt-4 mb-1">Đơn hàng</h6>
-												<h2 class="mb-2 number-font">56,992</h2>
-											</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-lg-3 col-md-3 ">
+								<div class="card">
+									<div class="card-body">
+										<h2 class="mb-1 number-font">0.35</h2>
+										<p>Tổng đơn hàng</p>
+										<div class="progress h-2 mb-1">
+											<div class="progress-bar bg-secondary w-20" role="progressbar"></div>
 										</div>
+										<span class="text-muted"><span class="mb-0 text-success fs-13"><i class="fe fe-arrow-up"></i> 2%</span> so với tháng trước</span>
 									</div>
-									<div class="col-lg-3 col-md-3 col-sm-12">
-										<div class="card">
-											<div class="card-body text-center statistics-info">
-												<div class="counter-icon bg-success mb-0 box-success-shadow">
-													<i class="fe fe-dollar-sign text-white"></i>
-												</div>
-												<h6 class="mt-4 mb-1">Đơn hàng chờ</h6>
-												<h2 class="mb-2  number-font">2,567</h2>
-											</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-lg-3 col-md-3 ">
+								<div class="card">
+									<div class="card-body">
+										<h2 class="mb-1 number-font">0.35</h2>
+										<p>Đơn hàng chờ</p>
+										<div class="progress h-2 mb-1">
+											<div class="progress-bar bg-warning w-20" role="progressbar"></div>
 										</div>
+										<span class="text-muted"><span class="mb-0 text-success fs-13"><i class="fe fe-arrow-up"></i> 15%</span> so với tháng trước</span>
 									</div>
-									<div class="col-lg-3 col-md-3 col-sm-12">
-										<div class="card">
-											<div class="card-body text-center statistics-info">
-												<div class="counter-icon bg-info mb-0 box-info-shadow">
-													<i class="fe fe-briefcase text-white"></i>
-												</div>
-												<h6 class="mt-4 mb-1">Giá trị trung bình đơn hàng</h6>
-												<h2 class="mb-2  number-font">34,789 vnđ</h2>
-											</div>
-										</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+								<div class="card">
+									<div class="card-body text-center">
+										<i class="fa fa-dollar text-secondary fa-2x text-secondary-shadow"></i>
+										<h6 class="mt-4 mb-3">Giá trị trung bình đơn hàng</h6>
+										<h4 class="mb-2  number-font">215,000đ</h4>
 									</div>
 								</div>
 							</div>
 
-							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
 								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Mặt hàng bán chạy</h3>
+									</div>
 									<div class="card-body">
-										<h2 class="number-font">Mặt hàng bán chạy</h2>
 										<small class="text-muted">Tỷ lệ chiếm trên tổng 12,938 sản phẩm</small>
 										<div class="progress grouped h-3">
 											<div class="progress-bar w-25 bg-primary " role="progressbar"></div>
@@ -579,6 +555,16 @@
 									</div>
 								</div>
 							</div><!-- COL END -->
+							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+								<div class="card overflow-hidden">
+									<div class="card-header">
+										<h3 class="card-title">Giá trị đơn hàng trung bình</h3>
+									</div>
+									<div class="card-body">
+										<div id="echart8" style="height: 370px;"></div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<!-- END CONTENT -->
 
@@ -802,30 +788,17 @@
 
 		<!-- CUSTOM JS-->
 		<script src="assets/js/custom.js"></script>
-
-
-
-
-
-
-
 		<!-- ECHART JS-->
 		<script src="assets/plugins/echarts/echarts.js"></script>
-
-		<!-- SIDE-MENU JS-->
-		<script src="assets/plugins/sidemenu/sidemenu.js"></script>
-
-		<!-- CUSTOM SCROLLBAR JS-->
-		<script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
-
-		<!-- SIDEBAR JS -->
-		<script src="assets/plugins/sidebar/sidebar.js"></script>
 
 		<!-- APEXCHART JS -->
 		<script src="assets/js/apexcharts.js"></script>
 
 		<!-- INDEX JS -->
 		<script src="assets/js/index1.js"></script>
+
+		<!-- INDEX-SCRIPTS -->
+		<script src="assets/js/index5.js"></script>
 
 	</body>
 </html>

@@ -4,3 +4,6 @@
 #map_dieuphoi{
     width: 100%;
 }
+.app-sidebar__user {
+    border-bottom: 1px solid #eee;
+}
