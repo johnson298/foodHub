@@ -81,17 +81,6 @@
 						</a><!-- LOGO -->
 						<a aria-label="Hide Sidebar" class="app-sidebar__toggle ml-auto" data-toggle="sidebar" href="#"></a><!-- sidebar-toggle-->
 					</div>
-					<div class="app-sidebar__user">
-						<div class="dropdown user-pro-body text-center">
-							<div class="user-pic">
-								<img src="assets/images/users/10.jpg" alt="user-img" class="avatar-xl rounded-circle">
-							</div>
-							<div class="user-info">
-								<h6 class=" mb-0 text-dark">Elizabeth Dyer</h6>
-								<span class="text-muted app-sidebar__user-name text-sm">Administrator</span>
-							</div>
-						</div>
-					</div>
 					<ul class="side-menu">
 						<li><h3>Main</h3></li>
 						<li >
@@ -520,11 +509,12 @@
 											<thead>
 												<tr>
 													<th>STT</th>
-													<th>Mã đơn hàng</th>
+													<th>Mã đơn</th>
 													<th>Khách hàng</th>
                                                     <th>SĐT</th>
                                                     <th>Loại đơn hàng</th>
                                                     <th>Tình trạng</th>
+                                                    <th>Người ship</th>
                                                     <th>Tổng tiền</th>
                                                     <th>Tùy chỉnh</th>
 												</tr>
@@ -536,8 +526,9 @@
 													<td>Nguyễn Văn A</td>
                                                     <td>02156344</td>
                                                     <td>Offline</td>
-                                                    <td><span class="badge badge-warning  mr-1 mb-1 mt-1">Chờ xác nhận</span></td>
-                                                    <td>120.000vnđ</td>
+                                                    <td><i class="fa fa-exclamation-triangle text-warning"></i> Chờ xác nhận</td>
+                                                    <td></td>
+													<td>120.000vnđ</td>
                                                     <td>
 														<a href="chitietdonhang.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
 														<a href="chitietdonhang.html" data-toggle="tooltip" title="Chi tiết" class="btn p-1"><i class="fa fa-info-circle" style="font-size: 18px;"></i></a>
@@ -550,8 +541,9 @@
 													<td>Nguyễn Văn A</td>
                                                     <td>02156344</td>
                                                     <td>Offline</td>
-                                                    <td><span class="badge badge-primary  mr-1 mb-1 mt-1">Đã phân công</span></td>
-                                                    <td>120.000vnđ</td>
+                                                    <td><i class="fa fa-check-circle-o text-secondary"></i> Đã phân công </td>
+                                                    <td></td>
+													<td>120.000vnđ</td>
                                                     <td>
 														<a href="chitietdonhang.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
 														<a href="chitietdonhang.html" data-toggle="tooltip" title="Chi tiết" class="btn p-1"><i class="fa fa-info-circle" style="font-size: 18px;"></i></a>
@@ -564,8 +556,14 @@
 													<td>Nguyễn Văn A</td>
                                                     <td>02156344</td>
                                                     <td>Offline</td>
-                                                    <td><span class="badge badge-success  mr-1 mb-1 mt-1">Hoàn tất</span></td>
-                                                    <td>120.000vnđ</td>
+                                                    <td><i class="fa fa-check mr-1 text-success"></i> Hoàn tất</td>
+                                                    <td>
+														<span class="tag">
+															<span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg" style="background: url(&quot;assets/images/users/user.jpg&quot;) center center;"></span>
+															Nguyễn Văn A
+														</span>
+													</td>
+													<td>120.000vnđ</td>
                                                     <td>
 														<a href="chitietdonhang.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
 														<a href="chitietdonhang.html" data-toggle="tooltip" title="Chi tiết" class="btn p-1"><i class="fa fa-info-circle" style="font-size: 18px;"></i></a>
@@ -578,8 +576,14 @@
 													<td>Nguyễn Văn A</td>
                                                     <td>02156344</td>
                                                     <td>Offline</td>
-                                                    <td><span class="badge badge-success  mr-1 mb-1 mt-1">Hoàn tất</span></td>
-                                                    <td>120.000vnđ</td>
+                                                    <td><i class="fa fa-check mr-1 text-success"></i> Hoàn tất</td>
+                                                    <td>
+														<span class="tag">
+															<span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg" style="background: url(&quot;assets/images/users/user.jpg&quot;) center center;"></span>
+															Nguyễn Văn A
+														</span>
+													</td>
+													<td>120.000vnđ</td>
                                                     <td>
 														<a href="chitietdonhang.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
 														<a href="chitietdonhang.html" data-toggle="tooltip" title="Chi tiết" class="btn p-1"><i class="fa fa-info-circle" style="font-size: 18px;"></i></a>
@@ -592,8 +596,14 @@
 													<td>Nguyễn Văn A</td>
                                                     <td>02156344</td>
                                                     <td>Offline</td>
-                                                    <td><span class="badge badge-success  mr-1 mb-1 mt-1">Hoàn tất</span></td>
-                                                    <td>120.000vnđ</td>
+                                                    <td><i class="fa fa-check mr-1 text-success"></i> Hoàn tất</td>
+                                                    <td>
+														<span class="tag">
+															<span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg" style="background: url(&quot;assets/images/users/user.jpg&quot;) center center;"></span>
+															Nguyễn Văn A
+														</span>
+													</td>
+													<td>120.000vnđ</td>
                                                     <td>
 														<a href="chitietdonhang.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
 														<a href="chitietdonhang.html" data-toggle="tooltip" title="Chi tiết" class="btn p-1"><i class="fa fa-info-circle" style="font-size: 18px;"></i></a>
@@ -606,8 +616,14 @@
 													<td>Nguyễn Văn A</td>
                                                     <td>02156344</td>
                                                     <td>Offline</td>
-                                                    <td><span class="badge badge-success  mr-1 mb-1 mt-1">Hoàn tất</span></td>
-                                                    <td>120.000vnđ</td>
+                                                    <td><i class="fa fa-check mr-1 text-success"></i> Hoàn tất</td>
+                                                    <td>
+														<span class="tag">
+															<span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg" style="background: url(&quot;assets/images/users/user.jpg&quot;) center center;"></span>
+															Nguyễn Văn A
+														</span>
+													</td>
+													<td>120.000vnđ</td>
                                                     <td>
 														<a href="chitietdonhang.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
 														<a href="chitietdonhang.html" data-toggle="tooltip" title="Chi tiết" class="btn p-1"><i class="fa fa-info-circle" style="font-size: 18px;"></i></a>
