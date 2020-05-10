@@ -673,9 +673,9 @@
  			},
  			names: {
  				// name of each serie
- 				'data1': 'sales1',
- 				'data2': 'sales2',
- 				'data3': 'sales3'
+ 				'data1': 'Thịt lợn',
+ 				'data2': 'Cà rốt',
+ 				'data3': 'Khoai lang'
  			}
  		},
  		axis: {},

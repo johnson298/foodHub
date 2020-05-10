@@ -95,7 +95,7 @@
 						<li class="slide">
 							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-truck"></i><span class="side-menu__label">Điều phối</span><i class="angle fa fa-angle-right"></i></a>
 							<ul class="slide-menu">
-								<li><a href="dieuphoi.html" class="slide-item">Điều phối hàng</a></li>
+								<li><a href="dieuphoi.html" class="slide-item">Điều phối đơn hàng</a></li>
 								<li><a href="lichsu.html" class="slide-item">Lịch sử</a></li>
 							</ul>
 						</li>
@@ -478,16 +478,42 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-3">
+                                            <div class="col-2">
                                                 <select class="form-control select2 custom-select" data-placeholder="Chọn cửa hàng">
-                                                    <option label="Chọn cửa hàng">
-                                                    </option>
+                                                    <option label="Chọn cửa hàng"></option>
                                                     <option value="1">Cửa hàng 1</option>
                                                     <option value="2">Cửa hàng 2</option>
                                                     <option value="3">Cửa hàng 3</option>
                                                 </select>
                                             </div>
-                                            <div class="col-5">
+                                            <div class="col-2">
+                                                <select class="form-control select2 custom-select" data-placeholder="Chọn khung giờ">
+                                                    <option label="Chọn cửa hàng"></option>
+													<option value="">Tất cả các khung giờ</option>
+													<option value="1">7:00 - 9:00</option>
+													<option value="2">9:00 - 12:00</option>
+													<option value="3">12:00 - 17:00</option>
+                                                </select>
+                                            </div>
+											<div class="col-2">
+												<select class="form-control select2 custom-select" data-placeholder="Chọn shipper">
+													<option label="Chọn shipper"></option>
+													<option value="1">Tất cả</option>
+													<option value="2">
+														<span class="tag">
+															<span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg" style="background: url(&quot;assets/images/users/user.jpg&quot;) center center;"></span>
+															Nguyễn Văn A
+														</span>
+													</option>
+													<option value="3">
+														<span class="tag">
+															<span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg" style="background: url(&quot;assets/images/users/user.jpg&quot;) center center;"></span>
+															Nguyễn Văn B
+														</span>
+													</option>
+												</select>
+											</div>
+                                            <div class="col-4">
                                                 <div class="input-group">
                                                     <div class="input-group-text">
                                                         <i class="fa fa-calendar"></i>
@@ -495,7 +521,7 @@
                                                     <input type="text" class="form-control pull-right" id="reservation">
                                                 </div>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-2">
                                                 <button class="btn btn-success">Lọc</button>
                                             </div>
                                         </div>
@@ -515,6 +541,7 @@
 												<tr>
 													<th>STT</th>
 													<th>Mã vận tải</th>
+													<th>Người ship</th>
 													<th>Tình trạng</th>
 													<th>Thời gian</th>
 													<th>Tùy chỉnh</th>
@@ -524,6 +551,12 @@
 												<tr>
 													<th scope="row">1</th>
 													<td>001</td>
+													<td>
+														<span class="tag">
+															<span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg" style="background: url(&quot;assets/images/users/user.jpg&quot;) center center;"></span>
+															Nguyễn Văn A
+														</span>
+													</td>
 													<td><span class="badge badge-success  mr-1 mb-1 mt-1">Hoàn tất</span></td>
 													<td>9:00 10/10/2020</td>
 													<td>
@@ -533,6 +566,12 @@
 												<tr>
 													<th scope="row">1</th>
 													<td>001</td>
+													<td>
+														<span class="tag">
+															<span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg" style="background: url(&quot;assets/images/users/user.jpg&quot;) center center;"></span>
+															Nguyễn Văn A
+														</span>
+													</td>
 													<td><span class="badge badge-danger  mr-1 mb-1 mt-1">Đã hủy</span></td>
 													<td>9:00 10/10/2020</td>
 													<td>
@@ -542,6 +581,12 @@
 												<tr>
 													<th scope="row">1</th>
 													<td>001</td>
+													<td>
+														<span class="tag">
+															<span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg" style="background: url(&quot;assets/images/users/user.jpg&quot;) center center;"></span>
+															Nguyễn Văn A
+														</span>
+													</td>
 													<td><span class="badge badge-info  mr-1 mb-1 mt-1">Đã phân công</span></td>
 													<td>9:00 10/10/2020</td>
 													<td>
@@ -551,6 +596,12 @@
 												<tr>
 													<th scope="row">1</th>
 													<td>001</td>
+													<td>
+														<span class="tag">
+															<span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg" style="background: url(&quot;assets/images/users/user.jpg&quot;) center center;"></span>
+															Nguyễn Văn A
+														</span>
+													</td>
 													<td><span class="badge badge-info  mr-1 mb-1 mt-1">Đã phân công</span></td>
 													<td>9:00 10/10/2020</td>
 													<td>
@@ -560,6 +611,12 @@
 												<tr>
 													<th scope="row">1</th>
 													<td>001</td>
+													<td>
+														<span class="tag">
+															<span class="tag-avatar avatar cover-image" data-image-src="assets/images/users/user.jpg" style="background: url(&quot;assets/images/users/user.jpg&quot;) center center;"></span>
+															Nguyễn Văn A
+														</span>
+													</td>
 													<td><span class="badge badge-info  mr-1 mb-1 mt-1">Đã phân công</span></td>
 													<td>9:00 10/10/2020</td>
 													<td>
