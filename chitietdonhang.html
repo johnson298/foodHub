@@ -483,7 +483,7 @@
 										</div>
 										<hr>
 										<div class="row">
-                                            <div class="col-6">
+                                            <div class="col-12">
                                                 <h5 class="font-weight-bold mb-4">Loại đơn hàng: <small class="ml-2"><span class="w-3 h-3 bg-success rounded-circle d-inline-block"></span> Online</small></h5>
                                                 <h5 class="font-weight-bold mb-4">Thông tin đơn hàng <i class="fa fa-edit" style="font-size: 18px;"></i></h5>
                                                 <div>
@@ -503,14 +503,32 @@
 														<span class="d-inline-block" style="width: 100px;">Thông tin:</span> <strong>VNPay - Mã hóa đơn: AJKSI78</strong></p>
 												</div>
                                             </div>
-                                            <div class="col-6">
-												<h5 class="font-weight-bold mb-4 d-flex">
-													<span class="mr-2">Tình trạng:</span>
-													<select name="" id="" class="form-control" style="width: 200px;">
+                                            <div class="col-12">
+												<h5 class="font-weight-bold mb-4">
+													<span class="mb-2">Tình trạng:</span>
+													<select name="" id="" class="form-control mt-2" style="width: 200px;">
 														<option value="" selected>Đang chờ xác nhận</option>
 														<option value="">Hoàn tất</option>
 													</select>
 												</h5>
+												<h5 class="font-weight-bold mb-4">Giờ nhận hàng:  <i class="fa fa-edit" style="font-size: 18px;"></i></h5>
+												<div class="d-flex mb-3">
+													<div class="input-group mr-2" style="width: 150px;">
+														<div class="input-group-prepend">
+															<div class="input-group-text">
+																<i class="fa fa-clock-o tx-16 lh-0 op-6"></i>
+															</div>
+														</div><!-- input-group-prepend -->
+														<input class="form-control" id="tpBasic" placeholder="Chọn giờ" type="text">
+													</div>
+													<div class="input-group" style="width: 200px;">
+														<div class="input-group-prepend">
+															<div class="input-group-text">
+																<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+															</div>
+														</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">
+													</div>
+												</div>
 												<h5 class="font-weight-bold mb-4">Ghi chú:  <i class="fa fa-edit" style="font-size: 18px;"></i></h5>
 												<div>
 													<p class="mb-2 pl-5">
@@ -579,6 +597,24 @@
 																</td>
 															</tr>
 															<tr>
+																<td colspan="4">Chiết khấu</td>
+																<td>
+																	0%
+																</td>
+															</tr>
+															<tr>
+																<td colspan="2">Khuyến mại</td>
+																<td colspan="2">
+																	<div class="input-group" style="width: 300px;">
+																		<input type="text" class="form-control" placeholder="Nhập mã khuyến mại" aria-label="Recipient's username" aria-describedby="button-addon2">
+																		<div class="input-group-append">
+																			<button class="btn btn-success" type="button" id="button-addon2">Check mã</button>
+																		</div>
+																	</div>
+																</td>
+																<td>99</td>
+															</tr>
+															<tr>
 																<td colspan="4">Tổng tiền</td>
 																<td>
 																	240.000đ
@@ -591,6 +627,7 @@
 										</div>
 									</div>
 									<div class="card-footer text-right">
+										<button type="button" class="btn btn-cyan mb-1"><i class="si si-wallet"></i> Lưu thay đổi</button>
 										<button type="button" class="btn btn-primary mb-1" onclick="javascript:window.print();"><i class="si si-wallet"></i> Thanh toán</button>
 										<button type="button" class="btn btn-success mb-1" onclick="javascript:window.print();"><i class="si si-paper-plane"></i> Gửi đơn hàng</button>
 										<button type="button" class="btn btn-info mb-1" onclick="javascript:window.print();"><i class="si si-printer"></i> In đơn hàng</button>
