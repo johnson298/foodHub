@@ -2,37 +2,33 @@
 historicalBarChart = [{
 	key: "Cumulative Return",
 	values: [{
-		"label": "A",
+		"label": "Thứ 2",
 		"value": 24,
 		"color": "#0774f8"
 	}, {
-		"label": "B",
+		"label": "Thứ 3",
 		"value": 10,
 		"color": "#d43f8d"
 	}, {
-		"label": "C",
+		"label": "Thứ tư",
 		"value": 35,
 		"color": "#09ad95"
 	}, {
-		"label": "D",
+		"label": "Thứ 5",
 		"value": 150,
 		"color": "#0774f8"
 	}, {
-		"label": "E",
+		"label": "Thứ 6",
 		"value": 120,
 		"color": "#2bcbba"
 	}, {
-		"label": "F",
+		"label": "Thứ 7",
 		"value": 95,
 		"color": "#fc7303"
 	}, {
-		"label": "G",
+		"label": "Chủ nhật",
 		"value": 13,
 		"color": "#17a2b8"
-	}, {
-		"label": "H",
-		"value": 5,
-		"color": "#ecb403"
 	}]
 }];
 nv.addGraph(function() {

@@ -55,6 +55,9 @@
     <!-- DATE PICKER CSS -->
     <link href="assets/plugins/date-picker/spectrum.css" rel="stylesheet"/>
 
+    <!-- Google Maps JavaScript library -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDglGWgkI9UwaTefjMAIW-AVMf6YtKY73s"></script>
+
 </head>
 
 <body class="app sidebar-mini">
@@ -469,12 +472,48 @@
 
                 <!-- CONTENT -->
                 <div class="row">
-                    <div class="col-md-12 col-lg-12">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">Thêm mới cửa hàng</div>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="form-control-label">Tên cửa hàng: <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Nhập tên của hàng">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="form-control-label">Địa chỉ: <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" id="message-text" placeholder="Nhập địa chỉ cửa hàng"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="form-control-label">Vị trí chính xác của cửa hàng: <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="search_input" placeholder="Tìm kiếm vị trí..." />
+                                        <input type="hidden" id="get-position-location">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="form-control-label">Trạng thái hoạt động: <span class="text-danger">*</span></label>
+                                        <div>
+                                            <select class="form-control select2 custom-select w-100" data-placeholder="Chọn trạng thái" style="width: 100%;">
+                                                <option value="1">Đang hoạt động</option>
+                                                <option value="2">Tạm đóng</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-success">Thêm mới</button>
+                                        <button class="btn btn-danger ml-2" type="reset">Hủy</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-8">
                         <div class="card">
                             <div class="card-header">
                                 <h3 class="card-title">Danh sách cửa hàng (500 cửa hàng)</h3>
                                 <div class="ml-auto pageheader-btn">
-                                    <a href="#" class="btn btn-success btn-icon text-white mr-2 btn-sm" data-toggle="modal" data-target="#themcuahang"><span> <i class="fe fe-plus"></i> </span> Thêm cửa hàng </a>
                                     <a href="#" class="btn btn-danger btn-icon text-white btn-sm"> <span> <i class="fe fe-log-in"></i> </span> Export </a>
                                 </div>
                             </div>
@@ -490,36 +529,6 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>
-                                                Cửa hàng A
-                                            </td>
-                                            <td>99 Láng Hạ, Ba Đình, Hà Nội</td>
-                                            <td>
-                                                <span class="tag tag-success">Hoạt động</span>
-                                            </td>
-                                            <td>
-                                                <a href="profile.html" data-toggle="tooltip" title="Đóng cửa hàng" class="btn p-1 text-danger"><i class="fa fa-lock" style="font-size: 18px;"></i></a>
-                                                <a href="profile.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                                <a href="profile.html" data-toggle="tooltip" title="Chi tiết" class="btn p-1"><i class="fa fa-info-circle" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>
-                                                Cửa hàng A
-                                            </td>
-                                            <td>99 Láng Hạ, Ba Đình, Hà Nội</td>
-                                            <td>
-                                                <span class="tag tag-danger">Đóng cửa</span>
-                                            </td>
-                                            <td>
-                                                <a href="profile.html" data-toggle="tooltip" title="Mở cửa hàng" class="btn p-1 text-success"><i class="fa fa-unlock" style="font-size: 18px;"></i></a>
-                                                <a href="profile.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                                <a href="profile.html" data-toggle="tooltip" title="Chi tiết" class="btn p-1"><i class="fa fa-info-circle" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
                                         <tr>
                                             <th>1</th>
                                             <td>
@@ -767,53 +776,6 @@
     </footer>
     <!-- FOOTER CLOSED -->
 
-    <div class="modal fade" id="themcuahang" tabindex="-1" role="dialog"  aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="example-Modal3">Thêm mới cửa hàng</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="recipient-name" class="form-control-label">Tên cửa hàng: <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="Nhập tên của hàng">
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="form-control-label">Địa chỉ: <span class="text-danger">*</span></label>
-                            <textarea class="form-control" id="message-text" placeholder="Nhập địa chỉ cửa hàng"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="form-control-label">Vị trí chính xác của cửa hàng: <span class="text-danger">*</span></label>
-                            <div class="d-flex w-100 align-items-center">
-                                <textarea class="form-control mr-2" id="" placeholder="Nhập vị trị chi tiết"></textarea>
-                                <button class="btn btn-light bg-white text-success brround btn-outline-light" data-toggle="tooltip" data-original-title="Chọn vị trí">
-                                    <i class="mb-5 fe fe-map-pin"></i>
-                                </button>
-<!--                                <button class="btn btn-success btn-sm radius" data-toggle="tooltip" title="" data-original-title="Chọn vị trí"><i class="fe fe-map-pin"></i></button>-->
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="form-control-label">Trạng thái hoạt động: <span class="text-danger">*</span></label>
-                            <div>
-                                <select class="form-control select2 custom-select w-100" data-placeholder="Chọn trạng thái" style="width: 100%;">
-                                    <option value="1">Đang hoạt động</option>
-                                    <option value="2">Tạm đóng</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success">Thêm mới</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 <!-- BACK-TO-TOP -->
@@ -880,6 +842,34 @@
 <!-- CUSTOM JS -->
 <script src="assets/js/custom.js"></script>
 
+<script>
+    var searchInput = 'search_input';
+
+    $(document).ready(function () {
+        var autocomplete;
+        autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
+            types: ['geocode'],
+            /*componentRestrictions: {
+             country: "USA"
+            }*/
+        });
+
+        google.maps.event.addListener(autocomplete, 'place_changed', function () {
+            var near_place = autocomplete.getPlace();
+
+            var lat = near_place.geometry.location.lat(),
+                lng = near_place.geometry.location.lng(),
+                place_id = near_place.place_id;
+            console.log(lat, lng, place_id)
+
+            $('#get-position-location').attr({
+                latitude: lat,
+                longitude: lng,
+                place_id: place_id
+            })
+        });
+    });
+</script>
 
 </body>
 </html>
