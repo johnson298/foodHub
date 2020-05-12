@@ -55,6 +55,8 @@
     <!-- DATE PICKER CSS -->
     <link href="assets/plugins/date-picker/spectrum.css" rel="stylesheet"/>
 
+    <link rel="stylesheet" href="assets/dist/css/style.css">
+
 </head>
 
 <body class="app sidebar-mini">
@@ -314,10 +316,10 @@
                 <!-- PAGE-HEADER -->
                 <div class="page-header">
                     <div>
-                        <h1 class="page-title">Sản phẩm</h1>
+                        <h1 class="page-title">Bán hàng</h1>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Danh mục</li>
+                            <li class="breadcrumb-item active" aria-current="page">Bán hàng</li>
                         </ol>
                     </div>
                     <div class="d-flex  ml-auto header-right-icons header-search-icon">
@@ -472,74 +474,424 @@
 
                 <!-- CONTENT -->
                 <div class="row">
-                    <div class="col-md-12 col-lg-12">
+                    <div class="col-7">
                         <div class="card">
-                            <div class="card-header d-flex justify-content-between">
-                                <h3 class="card-title mr-3">Danh sách danh mục</h3>
-                                <div class="ml-auto pageheader-btn">
-                                    <a href="#" class="btn btn-success btn-icon text-white mr-2 btn-sm" data-toggle="modal" data-target="#themdanhmuc"><span> <i class="fe fe-plus"></i> </span> Thêm danh mục </a>
-                                    <a href="#" class="btn btn-danger btn-icon text-white btn-sm"> <span> <i class="fe fe-log-in"></i> </span> Export </a>
+                            <div class="card-body p-2">
+                                <form action="">
+                                    <div class="form-group mb-0">
+                                        <div class="row gutters-xs">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Tìm sản phẩm">
+                                            </div>
+                                            <span class="col-auto">
+                                                <button class="btn btn-success" type="button"><i class="fe fe-search"></i></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="all-products">
+                            <div class="row">
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-font position-absolute rounded-right app-color text-white product-price price-section">
+                                                $120.00
+                                            </div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-font position-absolute rounded-right app-color text-white product-price price-section">
+                                                $120.00
+                                            </div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-font position-absolute rounded-right app-color text-white product-price price-section">
+                                                $120.00
+                                            </div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-font position-absolute rounded-right app-color text-white product-price price-section">
+                                                $120.00
+                                            </div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-font position-absolute rounded-right app-color text-white product-price price-section">
+                                                $120.00
+                                            </div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 col-xl-3 pr-0 mb-75 pl-75 standard-product mb-3">
+                                    <a href="#" data-toggle="modal" data-target="#show-product-variant-modal" class="app-color-text">
+                                        <div class="product-card bg-white rounded">
+                                            <div class="product-img-container image-property" style="background-image: url('assets/images/thitbo.jpg');"></div>
+                                            <div class="product-card-content product-content" style="height: 51.2px;">
+                                                <div class="position-relative h-100">
+                                                    <div class="p-2 h-100 d-flex align-items-center product-card-font font-weight-bold text-center justify-content-center "><span class="limit"> Cotton Short Sleeve T-shirt </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table card-table table-vcenter text-nowrap">
-                                    <thead>
-                                    <tr>
-                                        <th>STT</th>
-                                        <th>Tên danh mục</th>
-                                        <th>Mô tả ngắn</th>
-                                        <th>Tùy chỉnh</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>
-                                                Thịt
-                                            </td>
-                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores blanditiis dolore laudantium officiis velit.</td>
-                                            <td>
-                                                <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>
-                                                Thịt
-                                            </td>
-                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores blanditiis dolore laudantium officiis velit.</td>
-                                            <td>
-                                                <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>
-                                                Thịt
-                                            </td>
-                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores blanditiis dolore laudantium officiis velit.</td>
-                                            <td>
-                                                <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>
-                                                Thịt
-                                            </td>
-                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores blanditiis dolore laudantium officiis velit.</td>
-                                            <td>
-                                                <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <div class="card">
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-user-o"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Tìm kiếm khách hàng" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                    <span class="col-auto pl-0">
+                                        <button class="btn btn-outline-success" type="button"><i class="fa fa-user-plus"></i></button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div id="cart-section-2" class="cart-items-wrapper" style="height: 250px;">
+                                        <div class="cart-item-container py-1">
+                                            <div class="form-row row mx-0 px-1 cart-item flex-nowrap">
+                                                <div class="col-6 p-0 cart-item-btn">
+                                                    <div class="row mx-0 my-auto">
+                                                        <div class="col-1 p-0 m-auto toogle-product"><i class="fa fa-chevron-down cart-icon"></i></div>
+                                                        <div class="col-11  my-auto mx-0 pr-0">
+                                                            <div class="row mx-0 cart-item-title">
+                                                                <div class="col-12 pl-1 p-0 my-auto mx-0">
+                                                                    Narrow Three Quarter Pant
+                                                                    <br> <!---->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 my-auto px-0 ml-3 mr-0">
+                                                    <div class="d-flex justify-content-between mr-1 cart-quantity">
+                                                        <div class="pl-0 mx-0"><a href="#" class="change-quantity__minus"><i class="fa fa-minus-circle cart-icon-color"></i></a></div>
+                                                        <div class="align-self-center quantity-product">1</div>
+                                                        <div><a href="#" class="change-quantity__plus"><i class="fa fa-plus-circle la-2x cart-icon-color"></i></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 d-flex pr-0 pl-0 cart-calculatedPrice">
+                                                    <div class="align-self-center ml-1"><span>$600.00</span></div>
+                                                    <div class="align-self-center ml-2"><a href="#" class="text-danger"><i class="fa fa-trash"></i></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row row mx-0 px-2  collapse-animation" style="display: none;">
+                                                <div class="form-group pl-0 mb-zero col-4"><label for="cart-item-quantity0" class="label-in-cart ">
+                                                    Quantity</label> <input type="text" id="cart-item-quantity0" onkeydown="return event.keyCode == 69 ? false : true" class="form-control">
+                                                </div>
+                                                <div class="form-group pr-0 mb-zero col-4"><label for="cart-item-price0" class="label-in-cart">Price</label> <input type="text" id="cart-item-price0" onkeydown="return event.keyCode == 69 ? false : true" class="form-control"></div>
+                                                <div class="form-group pr-0 mb-zero col-4">
+                                                    <label for="cart-item-discount0" class="label-in-cart w-100">
+                                                        Discount (%)
+                                                    </label>
+                                                    <div class="position-relative"><input type="text" id="cart-item-discount0" onkeydown="return event.keyCode == 69 ? false : true" class="form-control" value="0"></div>
+                                                </div>
+                                                <div class="col-12 p-0 pb-2"><label for="cart-item-note0" class="label-in-cart">Note</label> <textarea id="cart-item-note0" class="form-control"></textarea></div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-item-container py-1">
+                                            <div class="form-row row mx-0 px-1 cart-item flex-nowrap">
+                                                <div class="col-6 p-0 cart-item-btn">
+                                                    <div class="row mx-0 my-auto">
+                                                        <div class="col-1 p-0 m-auto toogle-product"><i class="fa fa-chevron-down cart-icon"></i></div>
+                                                        <div class="col-11  my-auto mx-0 pr-0">
+                                                            <div class="row mx-0 cart-item-title">
+                                                                <div class="col-12 pl-1 p-0 my-auto mx-0">
+                                                                    Narrow Three Quarter Pant
+                                                                    <br> <!---->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 my-auto px-0 ml-3 mr-0">
+                                                    <div class="d-flex justify-content-between mr-1 cart-quantity">
+                                                        <div class="pl-0 mx-0"><a href="#" class="change-quantity__minus"><i class="fa fa-minus-circle cart-icon-color"></i></a></div>
+                                                        <div class="align-self-center quantity-product">1</div>
+                                                        <div><a href="#" class="change-quantity__plus"><i class="fa fa-plus-circle la-2x cart-icon-color"></i></a></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 d-flex pr-0 pl-0 cart-calculatedPrice">
+                                                    <div class="align-self-center ml-1"><span>$600.00</span></div>
+                                                    <div class="align-self-center ml-2"><a href="#" class="text-danger"><i class="fa fa-trash"></i></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row row mx-0 px-2  collapse-animation" style="display: none;">
+                                                <div class="form-group pl-0 mb-zero col-4"><label for="cart-item-quantity0" class="label-in-cart ">
+                                                    Quantity</label> <input type="text" id="cart-item-quantity0" onkeydown="return event.keyCode == 69 ? false : true" class="form-control">
+                                                </div>
+                                                <div class="form-group pr-0 mb-zero col-4"><label for="cart-item-price0" class="label-in-cart">Price</label> <input type="text" id="cart-item-price0" onkeydown="return event.keyCode == 69 ? false : true" class="form-control"></div>
+                                                <div class="form-group pr-0 mb-zero col-4">
+                                                    <label for="cart-item-discount0" class="label-in-cart w-100">
+                                                        Discount (%)
+                                                    </label>
+                                                    <div class="position-relative"><input type="text" id="cart-item-discount0" onkeydown="return event.keyCode == 69 ? false : true" class="form-control" value="0"></div>
+                                                </div>
+                                                <div class="col-12 p-0 pb-2"><label for="cart-item-note0" class="label-in-cart">Note</label> <textarea id="cart-item-note0" class="form-control"></textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="cart-section-3" class="product-card-font" style="">
+                                        <div class="row mx-0 px-3 py-2 font-weight-bold border-top border-bottom">
+                                            <div class="col-6 p-0">
+                                                Sub Total
+                                            </div>
+                                            <div class="col-6 p-0 text-right">
+                                                $1,200.00
+                                            </div>
+                                        </div>
+                                        <div class="row mx-0 px-3 py-2  border-bottom">
+                                            <div class="col-6 p-0">
+                                                Tax
+                                            </div>
+                                            <div class="col-6 p-0 text-right">
+                                                $0.00
+                                            </div>
+                                        </div>
+                                        <div id="pop_mouse1" class="row mx-0 px-3 py-2  border-bottom">
+                                            <div class="col-6 p-0">
+                                                Discount on all items
+                                                <!---->
+                                            </div>
+                                            <div class="col-3 p-0 text-center">
+                                                <div role="group" class="btn-group dropright"></div>
+                                            </div>
+                                            <div class="col-3 p-0 text-right">
+                                                <span><i class="la la-edit myicon1"></i>$0.00% </span>
+                                            </div>
+                                        </div>
+                                        <div id="pop_mouse2" class="row mx-0 px-3 py-2  border-bottom">
+                                            <div class="col-6 p-0">
+                                                Discount on entire Sale
+                                            </div>
+                                            <div class="col-3 p-0 text-center">
+                                                <div role="group" class="btn-group dropright">
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                            <div class="col-3 p-0 text-right">
+                                                <span><i class="la la-edit myicon2"></i>$0.00 </span>
+                                            </div>
+                                        </div>
+                                        <div class="row mx-0 px-3 py-2 font-weight-bold border-bottom">
+                                            <div class="col-4 p-0 custom-line-height">
+                                                Product Price Tax
+                                            </div>
+                                            <div class="col-8 p-0 text-right">
+                                                <button class="btn btn-gray btn-sm">
+                                                Excluded
+                                            </button>
+                                                <button class="btn btn-outline-light text-dark btn-sm  ml-1">
+                                                Included
+                                            </button>
+                                            </div>
+                                        </div>
+                                        <div class="row mx-0 px-3 py-2 font-weight-bold  border-bottom">
+                                            <div class="col-6 p-0">
+                                                Total
+                                            </div>
+                                            <div class="col-6 p-0 text-right">
+                                                $1,200.00
+                                            </div>
+                                        </div>
+                                        <!----> <!----> <!----> <!---->
+                                        <div class="p-3 border-bottom">
+                                            <button class="btn btn-block btn-cyan">Pay</button>
+                                        </div>
+                                        <div class="row mx-0">
+                                            <a href="#" class="col-4 p-0 text-center border-right hold-items disabled">
+                                                <i class="la la-recycle la-2x p-2 app-color-text hold-icon"></i> <!---->
+                                            </a>
+                                            <a href="#" class="col-4 p-0 text-center border-right hold-cart"><i class="la la-pause la-2x p-2 text-warning"></i></a> <a href="#" data-toggle="modal" data-target="#clear-cart-modal" class="col-4 p-0 text-center clear-cart"><i class="la la-times-circle la-2x p-2 text-danger"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- table-responsive -->
                         </div>
                     </div>
                 </div>
@@ -722,34 +1074,6 @@
         </div>
     </footer>
     <!-- FOOTER CLOSED -->
-    <div class="modal fade" id="themdanhmuc" tabindex="-1" role="dialog"  aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="example-Modal3">Thêm mới danh mục</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="recipient-name" class="form-control-label">Tên danh mục: <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="Nhập tên sản phẩm">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-control-label">Mô tả ngắn: <span class="text-danger">*</span></label>
-                            <textarea name="" id="" rows="5" class="form-control" placeholder="Mô tả danh mục"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success">Thêm mới</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 <!-- BACK-TO-TOP -->
@@ -815,6 +1139,16 @@
 
 <!-- CUSTOM JS -->
 <script src="assets/js/custom.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.cart-item-btn').each(function(item){
+            $(this).on('click', function() {
+                console.log($(this).parent().next('.collapse-animation'))
+                $(this).parent().next('.collapse-animation').slideToggle(200);
+            })
+        })
+    })
+</script>
 
 
 </body>
