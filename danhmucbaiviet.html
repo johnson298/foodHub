@@ -159,7 +159,7 @@
                         <div class="dropdown profile-1">
                             <a href="#" data-toggle="dropdown" class="nav-link pr-2 leading-none d-flex">
 										<span>
-											<img src="assets/images/users/user.jpg" alt="profile-user" class="avatar  profile-user brround cover-image">
+											<img src="assets/images/users/10.jpg" alt="profile-user" class="avatar  profile-user brround cover-image">
 										</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -318,10 +318,11 @@
                 <!-- PAGE-HEADER -->
                 <div class="page-header">
                     <div>
-                        <h1 class="page-title">Tạo mới đơn hàng</h1>
+                        <h1 class="page-title">Danh mục bài viết</h1>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Đơn hàng</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Tạo mới đơn hàng</li>
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Bài viết</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Danh mục</li>
                         </ol>
                     </div>
                     <div class="d-flex  ml-auto header-right-icons header-search-icon">
@@ -432,7 +433,7 @@
                         <div class="dropdown profile-1">
                             <a href="#" data-toggle="dropdown" class="nav-link pr-2 leading-none d-flex">
 										<span>
-											<img src="assets/images/users/user.jpg" alt="profile-user" class="avatar  profile-user brround cover-image">
+											<img src="assets/images/users/10.jpg" alt="profile-user" class="avatar  profile-user brround cover-image">
 										</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
@@ -475,68 +476,75 @@
                 <!-- PAGE-HEADER END -->
 
                 <!-- CONTENT -->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
                         <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Thông tin đơn hàng</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <label for="" class="form-control-label form-label">Chọn sản phẩm: <span class="text-danger">*</span></label>
-                                    <label class="d-block w-100">
-                                        <select class="form-control select2-show-search" placeholder="Tìm kiếm sản phẩm" data-placeholder="Tìm kiếm sản phẩm" style="width: 100%;">
-                                            <optgroup label="Danh sách sản phẩm">
-                                                <option value="AZ">Tìm kiếm sản phẩm</option>
-                                                <option value="CO">Thịt gà</option>
-                                                <option value="ID">Thịt đà điểu</option>
-                                                <option value="MT">Thịt khủng long</option>
-                                                <option value="NM">Thịt cá voi xanh</option>
-                                                <option value="ND">Cà rốt</option>
-                                                <option value="UT">Khoai lang</option>
-                                            </optgroup>
-                                        </select>
-                                    </label>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="form-control-label form-label">Loại đơn: <span class="text-danger">*</span></label>
-                                    <div class="w-100 d-flex">
-                                        <label class="custom-control custom-radio mr-2">
-                                            <input type="radio" class="custom-control-input" name="example-radios" value="option2" checked>
-                                            <span class="custom-control-label">Online</span>
-                                        </label>
-                                        <label class="custom-control custom-radio">
-                                            <input type="radio" class="custom-control-input" name="example-radios" value="option2">
-                                            <span class="custom-control-label">Offline</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="form-control-label form-label">Trạng thái đơn hàng: <span class="text-danger">*</span></label>
-                                    <select name="" id="" class="form-control" disabled>
-                                        <option value="" selected>Chờ xác nhận</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="form-control-label form-label">Khách hàng: <span class="text-danger">*</span></label>
-                                    <label class="d-block w-100">
-                                        <select class="form-control select2-show-search" placeholder="Tìm kiếm shipper" data-placeholder="Tìm kiếm shipper" style="width: 100%;">
-                                            <optgroup label="Danh sách shipper">
-                                                <option value="AZ"></option>
-                                                <option value="CO">Nguyễn Văn A</option>
-                                                <option value="CO">Nguyễn Văn A</option>
-                                                <option value="CO">Nguyễn Văn A</option>
-                                                <option value="CO">Nguyễn Văn A</option>
-                                                <option value="CO">Nguyễn Văn A</option>
-                                            </optgroup>
-                                        </select>
-                                    </label>
+                            <div class="card-header d-flex justify-content-between">
+                                <h3 class="card-title mr-3">Danh sách danh mục</h3>
+                                <div class="ml-auto pageheader-btn">
+                                    <a href="#" class="btn btn-success btn-icon text-white mr-2 btn-sm" data-toggle="modal" data-target="#themdanhmuc"><span> <i class="fe fe-plus"></i> </span> Thêm danh mục </a>
+                                    <a href="#" class="btn btn-danger btn-icon text-white btn-sm"> <span> <i class="fe fe-log-in"></i> </span> Export </a>
                                 </div>
                             </div>
-                            <div class="card-footer text-right">
-                                <a href="#" class="btn btn-success mt-1">Thêm mới</a>
-                                <a href="#" class="btn btn-danger mt-1">Hủy</a>
+                            <div class="table-responsive">
+                                <table class="table card-table table-vcenter text-nowrap">
+                                    <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Tên danh mục</th>
+                                        <th>Mô tả ngắn</th>
+                                        <th>Tùy chỉnh</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>
+                                                Tin tức
+                                            </td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores blanditiis dolore laudantium officiis velit.</td>
+                                            <td>
+                                                <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
+                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>
+                                                Tin tức
+                                            </td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores blanditiis dolore laudantium officiis velit.</td>
+                                            <td>
+                                                <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
+                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>
+                                                Combo
+                                            </td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores blanditiis dolore laudantium officiis velit.</td>
+                                            <td>
+                                                <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
+                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>
+                                                Combo
+                                            </td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores blanditiis dolore laudantium officiis velit.</td>
+                                            <td>
+                                                <a href="" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
+                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
+                            <!-- table-responsive -->
                         </div>
                     </div>
                 </div>
@@ -719,6 +727,42 @@
         </div>
     </footer>
     <!-- FOOTER CLOSED -->
+    <div class="modal fade" id="themdanhmuc" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="example-Modal3">Thêm mới danh mục</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="form-control-label">Tên danh mục: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Nhập tên sản phẩm">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="form-control-label">Loại danh mục: <span class="text-danger">*</span></label>
+                            <select name="" id="" class="form-control">
+                                <option value=""></option>
+                                <option>Tin tức</option>
+                                <option>Combo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label">Mô tả ngắn: <span class="text-danger">*</span></label>
+                            <textarea name="" id="" rows="5" class="form-control" placeholder="Mô tả danh mục"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Thêm mới</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- BACK-TO-TOP -->
@@ -784,9 +828,6 @@
 
 <!-- CUSTOM JS -->
 <script src="assets/js/custom.js"></script>
-
-<!-- CUSTOM SCROLL BAR JS-->
-<script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
 
 
 </body>

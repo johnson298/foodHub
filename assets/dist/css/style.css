@@ -132,3 +132,6 @@
 .product-card-content {
     transition: .2s;
 }
+#cart-section-add{
+    max-height: 470px;
+}
