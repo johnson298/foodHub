@@ -537,14 +537,16 @@
 													</div>
 												</div>
 												<h5 class="font-weight-bold mb-4">Ghi chú:  <i class="fa fa-edit" style="font-size: 18px;"></i></h5>
-												<div>
-													<p class="mb-2 pl-5">
-														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cupiditate dolore eius eligendi eos facilis hic inventore iure laboriosam nam nesciunt nulla, officia perferendis praesentium quae quibusdam sapiente unde velit?
-													</p>
-												</div>
+												<textarea class="form-control" rows="5"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet reiciendis facilis numquam eveniet aut, nemo assumenda blanditiis tempora. Delectus animi a quos? Ipsum quibusdam ipsa alias! Similique doloremque sequi minus.
+												</textarea>
                                             </div>
                                             <div class="col-12 mt-3">
-                                                <h5 class="font-weight-bold">Sản phẩm:</h5>
+												<h5 class="font-weight-bold">Danh sách phẩm:</h5>
+												<form action="">
+													<div class="form-group">
+														<input type="text" name="" id="" class="form-control bg-white" placeholder="Tìm sản phẩm">
+													</div>
+												</form>
 												<div class="table-responsive">
 													<table class="table card-table table-vcenter text-nowrap">
 														<thead>
@@ -553,6 +555,7 @@
 															<th>Ảnh sản phẩm</th>
 															<th>Tên & giá tiền</th>
 															<th>Đơn vị</th>
+															<th>Số lượng</th>
 															<th>Thành tiền</th>
 														</tr>
 														</thead>
@@ -568,6 +571,9 @@
 																</td>
 																<td>Kg</td>
 																<td>
+																	<input type="number" value="0" class="form-control">
+																</td>
+																<td>
 																	120.000đ
 																</td>
 															</tr>
@@ -582,36 +588,39 @@
 																</td>
 																<td>Kg</td>
 																<td>
+																	<input type="number" value="0" class="form-control">
+																</td>
+																<td>
 																	120.000đ
 																</td>
 															</tr>
 															<tr>
-																<td colspan="4">Giá tạm tính</td>
+																<td colspan="5">Giá tạm tính</td>
 																<td>
 																	240.000đ
 																</td>
 															</tr>
 															<tr>
-																<td colspan="4">Khuyến mại</td>
+																<td colspan="5">Khuyến mại</td>
 																<td>
 																	0đ
 																</td>
 															</tr>
 															<tr>
-																<td colspan="4">Giá vận chuyển</td>
+																<td colspan="5">Giá vận chuyển</td>
 																<td>
 																	240.000đ
 																</td>
 															</tr>
 															<tr>
-																<td colspan="4">Chiết khấu</td>
+																<td colspan="5">Chiết khấu</td>
 																<td>
 																	0%
 																</td>
 															</tr>
 															<tr>
 																<td colspan="2">Khuyến mại</td>
-																<td colspan="2">
+																<td colspan="3">
 																	<div class="input-group" style="width: 300px;">
 																		<input type="text" class="form-control" placeholder="Nhập mã khuyến mại" aria-label="Recipient's username" aria-describedby="button-addon2">
 																		<div class="input-group-append">
@@ -622,7 +631,7 @@
 																<td>99</td>
 															</tr>
 															<tr>
-																<td colspan="4">Tổng tiền</td>
+																<td colspan="5">Tổng tiền</td>
 																<td>
 																	240.000đ
 																</td>
@@ -634,10 +643,8 @@
 										</div>
 									</div>
 									<div class="card-footer text-right">
-										<button type="button" class="btn btn-cyan mb-1"><i class="si si-wallet"></i> Lưu thay đổi</button>
-										<button type="button" class="btn btn-primary mb-1" onclick="javascript:window.print();"><i class="si si-wallet"></i> Thanh toán</button>
-										<button type="button" class="btn btn-success mb-1" onclick="javascript:window.print();"><i class="si si-paper-plane"></i> Gửi đơn hàng</button>
-										<button type="button" class="btn btn-info mb-1" onclick="javascript:window.print();"><i class="si si-printer"></i> In đơn hàng</button>
+										<button type="button" class="btn btn-cyan mb-1"><i class="fa fa-check"></i> Cập nhật</button>
+										<button type="button" class="btn btn-info mb-1" onclick="javascript:window.print();"><i class="fa fa-print" style="font-size: 18px;"></i> In đơn hàng</button>
 									</div>
 								</div>
 							</div><!-- COL-END -->
