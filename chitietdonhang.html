@@ -490,76 +490,45 @@
 										</div>
 										<hr>
 										<div class="row">
-                                            <div class="col-12">
-                                                <h5 class="font-weight-bold mb-4">Loại đơn hàng: <small class="ml-2"><span class="w-3 h-3 bg-success rounded-circle d-inline-block"></span> Online</small></h5>
-                                                <h5 class="font-weight-bold mb-4">Thông tin đơn hàng <i class="fa fa-edit" style="font-size: 18px;"></i></h5>
-                                                <div>
-													<p class="mb-2 pl-5">
-														<span class="d-inline-block"  style="width: 100px;">Khách hàng:</span> <strong>Nguyễn Văn A</strong></p>
-													<p class="mb-2 pl-5">
-														<span class="d-inline-block" style="width: 100px;">Sđt:</span> <strong>0255223344</strong></p>
-													<p class="mb-2 pl-5">
-														<span class="d-inline-block" style="width: 100px;">Địa chỉ:</span> <strong>Số 12, Cầu Diễn, Bắc Từ Liêm, Hà Nội</strong>
-													</p>
-												</div>
-												<h5 class="font-weight-bold mb-4">Thanh toán: <span class="text-success">Thành công</span></h5>
-												<div>
-													<p class="mb-2 pl-5">
-														<span class="d-inline-block"  style="width: 100px;">Hình thức:</span> <strong>Thanh toán trực tuyến</strong></p>
-													<p class="mb-2 pl-5">
-														<span class="d-inline-block" style="width: 100px;">Thông tin:</span> <strong>VNPay - Mã hóa đơn: AJKSI78</strong></p>
-												</div>
-                                            </div>
-                                            <div class="col-12">
-												<h5 class="font-weight-bold mb-4">
-													<span class="mb-2">Tình trạng:</span>
-													<select name="" id="" class="form-control mt-2" style="width: 200px;">
-														<option value="" selected>Đang chờ xác nhận</option>
-														<option value="">Hoàn tất</option>
-													</select>
-												</h5>
-												<h5 class="font-weight-bold mb-4">Giờ nhận hàng:  <i class="fa fa-edit" style="font-size: 18px;"></i></h5>
-												<div class="d-flex mb-3">
-													<div class="input-group mr-2" style="width: 150px;">
-														<div class="input-group-prepend">
-															<div class="input-group-text">
-																<i class="fa fa-clock-o tx-16 lh-0 op-6"></i>
-															</div>
-														</div><!-- input-group-prepend -->
-														<input class="form-control" id="tpBasic" placeholder="Chọn giờ" type="text">
-													</div>
-													<div class="input-group" style="width: 200px;">
-														<div class="input-group-prepend">
-															<div class="input-group-text">
-																<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
-															</div>
-														</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">
+											<div class="col-12 col-md-8">
+												<div class="border">
+													<div class="row">
+														<div class="col-6">
+															<h5 class="font-weight-bold">Thông tin khách hàng</h5>
+															<h6 class="font-weight-bold text-success">Nguyen Van A</h6>
+														</div>
+														<div class="col-6 text-right">
+															<h5 class="font-weight-bold">Loại đơn hàng <small class="ml-2"><span class="w-3 h-3 bg-success rounded-circle d-inline-block"></span> Online</small></h5>
+															<h6 class="font-weight-bold">Tình trạng: <span class="text-success">Chưa thanh toán</span></h6>
+														</div>
 													</div>
 												</div>
-												<h5 class="font-weight-bold mb-4">Ghi chú:  <i class="fa fa-edit" style="font-size: 18px;"></i></h5>
-												<textarea class="form-control" rows="5"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet reiciendis facilis numquam eveniet aut, nemo assumenda blanditiis tempora. Delectus animi a quos? Ipsum quibusdam ipsa alias! Similique doloremque sequi minus.
-												</textarea>
-                                            </div>
-                                            <div class="col-12 mt-3">
-												<h5 class="font-weight-bold">Danh sách phẩm:</h5>
-												<form action="">
+												<div class="border mt-2">
+													<h5 class="font-weight-bold">Thông tin giao hàng</h5>
 													<div class="form-group">
-														<input type="text" name="" id="" class="form-control bg-white" placeholder="Tìm sản phẩm">
+														<label for="">Số điện thoại:</label>
+														<input type="number" class="form-control mb-1" value="091283789">
 													</div>
-												</form>
-												<div class="table-responsive">
-													<table class="table card-table table-vcenter text-nowrap">
-														<thead>
-														<tr>
-															<th>STT</th>
-															<th>Ảnh sản phẩm</th>
-															<th>Tên & giá tiền</th>
-															<th>Đơn vị</th>
-															<th>Số lượng</th>
-															<th>Thành tiền</th>
-														</tr>
-														</thead>
-														<tbody>
+													<div class="form-group">
+														<label for="">Địa chỉ:</label>
+														<input type="text" class="form-control" value="Số 113 ngõ 1194 - Láng Thượng">
+													</div>
+												</div>
+
+												<div class="border mt-2">
+													<div class="table-responsive">
+														<table class="table card-table table-vcenter text-nowrap">
+															<thead>
+															<tr>
+																<th>STT</th>
+																<th>Ảnh sản phẩm</th>
+																<th>Tên & giá tiền</th>
+																<th>Đơn vị</th>
+																<th>Số lượng</th>
+																<th>Thành tiền</th>
+															</tr>
+															</thead>
+															<tbody>
 															<tr>
 																<th>1</th>
 																<td>
@@ -594,32 +563,32 @@
 																	120.000đ
 																</td>
 															</tr>
-															<tr>
-																<td colspan="5">Giá tạm tính</td>
+															<tr class="bg-light">
+																<td colspan="5"><strong>Giá tạm tính</strong></td>
 																<td>
-																	240.000đ
+																	<strong>240.000đ</strong>
 																</td>
 															</tr>
-															<tr>
-																<td colspan="5">Khuyến mại</td>
+															<tr class="bg-light">
+																<td colspan="5"><strong>Khuyến mại</strong></td>
 																<td>
-																	0đ
+																	<strong>0đ</strong>
 																</td>
 															</tr>
-															<tr>
-																<td colspan="5">Giá vận chuyển</td>
+															<tr class="bg-light">
+																<td colspan="5"><strong>Giá vận chuyển</strong></td>
 																<td>
-																	240.000đ
+																	<strong>240.000đ</strong>
 																</td>
 															</tr>
-															<tr>
-																<td colspan="5">Chiết khấu</td>
+															<tr class="bg-light">
+																<td colspan="5"><strong>Chiết khấu</strong></td>
 																<td>
-																	0%
+																	<strong>0%</strong>
 																</td>
 															</tr>
-															<tr>
-																<td colspan="2">Khuyến mại</td>
+															<tr class="bg-light ">
+																<td colspan="2"><strong>Khuyến mại</strong></td>
 																<td colspan="3">
 																	<div class="input-group" style="width: 300px;">
 																		<input type="text" class="form-control" placeholder="Nhập mã khuyến mại" aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -630,16 +599,46 @@
 																</td>
 																<td>99</td>
 															</tr>
-															<tr>
-																<td colspan="5">Tổng tiền</td>
+															<tr class="bg-light">
+																<td colspan="5">
+																	<h6 class="font-weight-bold">Tổng tiền</h6>
+																</td>
 																<td>
-																	240.000đ
+																	<h6 class="font-weight-bold text-success">240.000đ</h6>
 																</td>
 															</tr>
-														</tbody>
-													</table>
+															</tbody>
+														</table>
+													</div>
 												</div>
-                                            </div>
+											</div>
+											<div class="col-12 col-md-4">
+												<div class="border">
+													<h5 class="font-weight-bold">Tình trạng:</h5>
+													<select name="" class="form-control mt-2">
+														<option value="" selected>Đang chờ xác nhận</option>
+														<option value="">Hoàn tất</option>
+													</select>
+													<h5 class="font-weight-bold mt-3">Giờ giao hàng:</h5>
+													<div class="d-flex">
+														<div class="input-group wd-150">
+															<div class="input-group-prepend">
+																<div class="input-group-text">
+																	<i class="fa fa-clock-o tx-16 lh-0 op-6"></i>
+																</div><!-- input-group-text -->
+															</div><!-- input-group-prepend -->
+															<input class="form-control" id="tp3" placeholder="Set time" type="text" value="9:00am">
+															<button class="btn btn btn-primary br-tl-0 br-bl-0" id="setTimeButton">Current</button>
+														</div><!-- input-group -->
+													</div>
+													<div class="form-group mt-2">
+														<input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">
+													</div>
+													<h5 class="font-weight-bold mt-3">Ghi chú:</h5>
+													<textarea  rows="5"
+															  class="form-control">Lorem ipsum dolor...</textarea>
+												</div>
+											</div>
 										</div>
 									</div>
 									<div class="card-footer text-right">
