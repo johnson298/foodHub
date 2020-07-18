@@ -54,6 +54,11 @@
 
     <!-- DATE PICKER CSS -->
     <link href="assets/plugins/date-picker/spectrum.css" rel="stylesheet"/>
+    <!-- SUMMERNOTE CSS -->
+    <link rel="stylesheet" href="assets/plugins/summernote/summernote-bs4.css">
+    <!-- FILE UPLODE CSS -->
+    <link href="assets/plugins/fileuploads/css/fileupload.css" rel="stylesheet" type="text/css"/>
+
 
 </head>
 
@@ -318,10 +323,11 @@
                 <!-- PAGE-HEADER -->
                 <div class="page-header">
                     <div>
-                        <h1 class="page-title">Bài viết</h1>
+                        <h1 class="page-title">Chi tiết combo (thêm combo)</h1>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Bài viết</li>
+                            <li class="breadcrumb-item"><a href="#">Bài viết</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Chi tiết combo</li>
                         </ol>
                     </div>
                     <div class="d-flex  ml-auto header-right-icons header-search-icon">
@@ -475,342 +481,406 @@
                 <!-- PAGE-HEADER END -->
 
                 <!-- CONTENT -->
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-xl-7 col-md-12 col-sm-12">
                         <div class="card">
-                            <div class="card-header d-flex justify-content-between">
-                                <h3 class="card-title mr-3">Danh sách bài viết</h3>
-                                <div class="ml-auto pageheader-btn">
-                                    <a href="chitietcombo.html" class="btn btn-success btn-icon text-white mr-2 btn-sm"><span> <i class="fe fe-plus"></i> </span> Thêm combo </a>
-                                    <a href="thembaiviet.html" class="btn btn-success btn-icon text-white mr-2 btn-sm"><span> <i class="fe fe-plus"></i> </span> Thêm tin tức </a>
-                                    <a href="#" class="btn btn-danger btn-icon text-white btn-sm"> <span> <i class="fe fe-log-in"></i> </span> Export </a>
+                            <div class="card-header">
+                                <h3 class="card-title">Thông tin combo</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="">Tiêu đề: </label>
+                                            <input type="text" class="form-control" id="" placeholder="Nhập tiêu đề">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Danh mục bài viết: </label>
+                                            <select name="" id="" class="form-control">
+                                                <option value=""></option>
+                                                <option value="">Danh mục 1</option>
+                                                <option value="">Danh mục 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Nội dung bài viết: </label>
+                                            <div id="summernote"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum beatae, voluptatem fugit similique nesciunt unde? Doloribus, dolores blanditiis minus mollitia laudantium, officia vitae consequuntur rem accusantium deleniti fuga molestias facilis. </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table card-table table-vcenter text-nowrap">
-                                    <thead>
-                                    <tr>
-                                        <th>STT</th>
-                                        <th>Tiêu đề</th>
-                                        <th>Loại bài viết</th>
-                                        <th>Ngày viết</th>
-                                        <th>Trạng thái</th>
-                                        <th>Gửi thông báo</th>
-                                        <th>Tùy chỉnh</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Làm sao để có một bữa ăn dinh dưỡng</td>
-                                            <td><i>Tin tức</i></td>
-                                            <td>10/10/2020</td>
-                                            <td>
-                                                <span class="w-4 h-4 bg-success rounded-circle mr-1 d-inline-block"></span> Khả dụng
-                                            </td>
-                                            <td><span class="text-success">Thành công</span></td>
-                                            <td>
-                                                <a href="thembaiviet.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Làm sao để có một bữa ăn dinh dưỡng</td>
-                                            <td><i>Tin tức</i></td>
-                                            <td>10/10/2020</td>
-                                            <td>
-                                                <span class="w-4 h-4 bg-success rounded-circle mr-1 d-inline-block"></span> Khả dụng
-                                            </td>
-                                            <td><span class="text-success">Thành công</span></td>
-                                            <td>
-                                                <a href="thembaiviet.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Làm sao để có một bữa ăn dinh dưỡng</td>
-                                            <td>
-                                                <a href="chitietcombo.html"><i>Combo</i></a>
-                                            </td>
-                                            <td>10/10/2020</td>
-                                            <td>
-                                                <span class="w-4 h-4 bg-success rounded-circle mr-1 d-inline-block"></span> Khả dụng
-                                            </td>
-                                            <td></td>
-                                            <td>
-                                                <a href="thembaiviet.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Làm sao để có một bữa ăn dinh dưỡng</td>
-                                            <td>
-                                                <a href="chitietcombo.html"><i>Combo</i></a>
-                                            </td>
-                                            <td>10/10/2020</td>
-                                            <td>
-                                                <span class="w-4 h-4 bg-warning rounded-circle mr-1 d-inline-block"></span> Lưu trữ
-                                            </td>
-                                            <td></td>
-                                            <td>
-                                                <a href="thembaiviet.html" data-toggle="tooltip" title="Chỉnh sửa" class="btn p-1"><i class="fa fa-edit" style="font-size: 18px;"></i></a>
-                                                <a href="" data-toggle="tooltip" title="Xóa" class="btn p-1"><i class="fa fa-trash" style="font-size: 18px;"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Nguyên liệu</h3>
                             </div>
-                            <!-- table-responsive -->
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table card-table table-vcenter text-nowrap">
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Loại nhiên liệu</th>          
+                                            <th>Số lượng</th>
+                                            <th>Đơn Vị</th>
+                                            <th></th>
+                                        </tr>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <td>
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="">Gà</option>
+                                                    </select>
+                                                </td>
+                                                <td>10</td>
+                                                <td>
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="">kg</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-danger">Xóa</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Hành động</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="">Trạng thái: </label>
+                                            <label class="custom-control custom-switch success" style="transform: translateY(3px)">
+                                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
+                                                <span class="custom-switch-indicator"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Loại bài viết: </label>
+                                            <span>Combo</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Danh mục bài viết: </label>
+                                            <select name="" id="" class="form-control">
+                                                <option value="">Chọn danh mục bài viết</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Hình ảnh: </label>
+                                            <input type="file" class="dropify" data-height="300" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3 d-flex justify-content-end">
+                        <a href="#" class="btn btn-success">Tạo bài viết</a>
+                        <a href="#" class="btn btn-danger ml-2">Hủy</a>
+                    </div>
+                    <!-- END CONTENT -->
+
+                </div>
+            </div>
+            <!-- CONTAINER CLOSED -->
+        </div>
+        <!-- SIDE-BAR -->
+        <div class="sidebar sidebar-right sidebar-animate">
+            <div class="p-4 border-bottom">
+                <span class="fs-17">Notifications</span>
+                <a href="#" class="sidebar-icon text-right float-right" data-toggle="sidebar-right" data-target=".sidebar-right"><i class="fe fe-x"></i></a>
+            </div>
+            <div class="list d-flex align-items-center border-bottom p-4">
+                <div class="">
+                    <span class="avatar bg-primary brround avatar-md">CH</span>
+                </div>
+                <div class="wrapper w-100 ml-3">
+                    <p class="mb-0 d-flex">
+                        <b>New Websites is Created</b>
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-clock text-muted mr-1"></i>
+                            <small class="text-muted ml-auto">30 mins ago</small>
+                            <p class="mb-0"></p>
                         </div>
                     </div>
                 </div>
-                <!-- END CONTENT -->
+            </div><!-- LIST END -->
+            <div class="list d-flex align-items-center border-bottom p-4">
+                <div class="">
+                    <span class="avatar bg-danger brround avatar-md">N</span>
+                </div>
+                <div class="wrapper w-100 ml-3">
+                    <p class="mb-0 d-flex">
+                        <b>Prepare For the Next Project</b>
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-clock text-muted mr-1"></i>
+                            <small class="text-muted ml-auto">2 hours ago</small>
+                            <p class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- LIST END -->
+            <div class="list d-flex align-items-center border-bottom p-4">
+                <div class="">
+                    <span class="avatar bg-info brround avatar-md">S</span>
+                </div>
+                <div class="wrapper w-100 ml-3">
+                    <p class="mb-0 d-flex">
+                        <b>Decide the live Discussion Time</b>
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-clock text-muted mr-1"></i>
+                            <small class="text-muted ml-auto">3 hours ago</small>
+                            <p class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- LIST END -->
+            <div class="list d-flex align-items-center border-bottom p-4">
+                <div class="">
+                    <span class="avatar bg-warning brround avatar-md">K</span>
+                </div>
+                <div class="wrapper w-100 ml-3">
+                    <p class="mb-0 d-flex">
+                        <b>Team Review meeting</b>
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-clock text-muted mr-1"></i>
+                            <small class="text-muted ml-auto">4 hours ago</small>
+                            <p class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- LIST END -->
+            <div class="list d-flex align-items-center border-bottom p-4">
+                <div class="">
+                    <span class="avatar bg-success brround avatar-md">R</span>
+                </div>
+                <div class="wrapper w-100 ml-3">
+                    <p class="mb-0 d-flex">
+                        <b>Prepare for Presentation</b>
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-clock text-muted mr-1"></i>
+                            <small class="text-muted ml-auto">1 days ago</small>
+                            <p class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- LIST END -->
+            <div class="list d-flex align-items-center border-bottom p-4">
+                <div class="">
+                    <span class="avatar bg-pink brround avatar-md">MS</span>
+                </div>
+                <div class="wrapper w-100 ml-3">
+                    <p class="mb-0 d-flex">
+                        <b>Prepare for Presentation</b>
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-clock text-muted mr-1"></i>
+                            <small class="text-muted ml-auto">1 days ago</small>
+                            <p class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- LIST END -->
+            <div class="list d-flex align-items-center border-bottom p-4">
+                <div class="">
+                    <span class="avatar bg-purple brround avatar-md">L</span>
+                </div>
+                <div class="wrapper w-100 ml-3">
+                    <p class="mb-0 d-flex">
+                        <b>Prepare for Presentation</b>
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-clock text-muted mr-1"></i>
+                            <small class="text-muted ml-auto">1 day ago</small>
+                            <p class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- LIST END -->
+            <div class="list d-flex align-items-center border-bottom p-4">
+                <div class="">
+                    <span class="avatar bg-warning brround avatar-md">L</span>
+                </div>
+                <div class="wrapper w-100 ml-3">
+                    <p class="mb-0 d-flex">
+                        <b>Prepare for Presentation</b>
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-clock text-muted mr-1"></i>
+                            <small class="text-muted ml-auto">1 day ago</small>
+                            <p class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- LIST END -->
+            <div class="list d-flex align-items-center p-4">
+                <div class="">
+                    <span class="avatar bg-blue brround avatar-md">U</span>
+                </div>
+                <div class="wrapper w-100 ml-3">
+                    <p class="mb-0 d-flex">
+                        <b>Prepare for Presentation</b>
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-clock text-muted mr-1"></i>
+                            <small class="text-muted ml-auto">2 days ago</small>
+                            <p class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- LIST END -->
+        </div>
+        <!-- SIDE-BAR CLOSED -->
 
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        Copyright © 2019 <a href="#">Volgh</a>. Designed by <a href="#"> Spruko Technologies Pvt.Ltd </a> All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER CLOSED -->
+        <div class="modal fade" id="themmagiamgia" tabindex="-1" role="dialog"  aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="example-Modal3">Tạo mã giảm giá</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="" class="form-control-label">Tạo mã ngày: <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+                                        </div>
+                                    </div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Mô tả ngắn: <span class="text-danger">*</span></label>
+                                <textarea name="" id="" rows="5" class="form-control" placeholder="Mô tả danh mục"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Thêm mới</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- CONTAINER CLOSED -->
     </div>
-    <!-- SIDE-BAR -->
-    <div class="sidebar sidebar-right sidebar-animate">
-        <div class="p-4 border-bottom">
-            <span class="fs-17">Notifications</span>
-            <a href="#" class="sidebar-icon text-right float-right" data-toggle="sidebar-right" data-target=".sidebar-right"><i class="fe fe-x"></i></a>
-        </div>
-        <div class="list d-flex align-items-center border-bottom p-4">
-            <div class="">
-                <span class="avatar bg-primary brround avatar-md">CH</span>
-            </div>
-            <div class="wrapper w-100 ml-3">
-                <p class="mb-0 d-flex">
-                    <b>New Websites is Created</b>
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <i class="mdi mdi-clock text-muted mr-1"></i>
-                        <small class="text-muted ml-auto">30 mins ago</small>
-                        <p class="mb-0"></p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- LIST END -->
-        <div class="list d-flex align-items-center border-bottom p-4">
-            <div class="">
-                <span class="avatar bg-danger brround avatar-md">N</span>
-            </div>
-            <div class="wrapper w-100 ml-3">
-                <p class="mb-0 d-flex">
-                    <b>Prepare For the Next Project</b>
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <i class="mdi mdi-clock text-muted mr-1"></i>
-                        <small class="text-muted ml-auto">2 hours ago</small>
-                        <p class="mb-0"></p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- LIST END -->
-        <div class="list d-flex align-items-center border-bottom p-4">
-            <div class="">
-                <span class="avatar bg-info brround avatar-md">S</span>
-            </div>
-            <div class="wrapper w-100 ml-3">
-                <p class="mb-0 d-flex">
-                    <b>Decide the live Discussion Time</b>
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <i class="mdi mdi-clock text-muted mr-1"></i>
-                        <small class="text-muted ml-auto">3 hours ago</small>
-                        <p class="mb-0"></p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- LIST END -->
-        <div class="list d-flex align-items-center border-bottom p-4">
-            <div class="">
-                <span class="avatar bg-warning brround avatar-md">K</span>
-            </div>
-            <div class="wrapper w-100 ml-3">
-                <p class="mb-0 d-flex">
-                    <b>Team Review meeting</b>
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <i class="mdi mdi-clock text-muted mr-1"></i>
-                        <small class="text-muted ml-auto">4 hours ago</small>
-                        <p class="mb-0"></p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- LIST END -->
-        <div class="list d-flex align-items-center border-bottom p-4">
-            <div class="">
-                <span class="avatar bg-success brround avatar-md">R</span>
-            </div>
-            <div class="wrapper w-100 ml-3">
-                <p class="mb-0 d-flex">
-                    <b>Prepare for Presentation</b>
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <i class="mdi mdi-clock text-muted mr-1"></i>
-                        <small class="text-muted ml-auto">1 days ago</small>
-                        <p class="mb-0"></p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- LIST END -->
-        <div class="list d-flex align-items-center border-bottom p-4">
-            <div class="">
-                <span class="avatar bg-pink brround avatar-md">MS</span>
-            </div>
-            <div class="wrapper w-100 ml-3">
-                <p class="mb-0 d-flex">
-                    <b>Prepare for Presentation</b>
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <i class="mdi mdi-clock text-muted mr-1"></i>
-                        <small class="text-muted ml-auto">1 days ago</small>
-                        <p class="mb-0"></p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- LIST END -->
-        <div class="list d-flex align-items-center border-bottom p-4">
-            <div class="">
-                <span class="avatar bg-purple brround avatar-md">L</span>
-            </div>
-            <div class="wrapper w-100 ml-3">
-                <p class="mb-0 d-flex">
-                    <b>Prepare for Presentation</b>
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <i class="mdi mdi-clock text-muted mr-1"></i>
-                        <small class="text-muted ml-auto">1 day ago</small>
-                        <p class="mb-0"></p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- LIST END -->
-        <div class="list d-flex align-items-center border-bottom p-4">
-            <div class="">
-                <span class="avatar bg-warning brround avatar-md">L</span>
-            </div>
-            <div class="wrapper w-100 ml-3">
-                <p class="mb-0 d-flex">
-                    <b>Prepare for Presentation</b>
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <i class="mdi mdi-clock text-muted mr-1"></i>
-                        <small class="text-muted ml-auto">1 day ago</small>
-                        <p class="mb-0"></p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- LIST END -->
-        <div class="list d-flex align-items-center p-4">
-            <div class="">
-                <span class="avatar bg-blue brround avatar-md">U</span>
-            </div>
-            <div class="wrapper w-100 ml-3">
-                <p class="mb-0 d-flex">
-                    <b>Prepare for Presentation</b>
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <i class="mdi mdi-clock text-muted mr-1"></i>
-                        <small class="text-muted ml-auto">2 days ago</small>
-                        <p class="mb-0"></p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- LIST END -->
-    </div>
-    <!-- SIDE-BAR CLOSED -->
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row align-items-center flex-row-reverse">
-                <div class="col-md-12 col-sm-12 text-center">
-                    Copyright © 2019 <a href="#">Volgh</a>. Designed by <a href="#"> Spruko Technologies Pvt.Ltd </a> All rights reserved.
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- FOOTER CLOSED -->
-</div>
+    <!-- BACK-TO-TOP -->
+    <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+    <!-- JQUERY JS -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
 
-<!-- BACK-TO-TOP -->
-<a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+    <!-- BOOTSTRAP JS -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
 
-<!-- JQUERY JS -->
-<script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!-- SPARKLINE JS-->
+    <script src="assets/js/jquery.sparkline.min.js"></script>
 
-<!-- BOOTSTRAP JS -->
-<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+    <!-- CHART-CIRCLE JS-->
+    <script src="assets/js/circle-progress.min.js"></script>
 
-<!-- SPARKLINE JS-->
-<script src="assets/js/jquery.sparkline.min.js"></script>
+    <!-- RATING STAR JS-->
+    <script src="assets/plugins/rating/jquery.rating-stars.js"></script>
 
-<!-- CHART-CIRCLE JS-->
-<script src="assets/js/circle-progress.min.js"></script>
+    <!-- C3 CHART JS-->
+    <script src="assets/plugins/charts-c3/d3.v5.min.js"></script>
+    <script src="assets/plugins/charts-c3/c3-chart.js"></script>
 
-<!-- RATING STAR JS-->
-<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+    <!-- INPUT MASK JS-->
+    <script src="assets/plugins/input-mask/jquery.mask.min.js"></script>
 
-<!-- C3 CHART JS-->
-<script src="assets/plugins/charts-c3/d3.v5.min.js"></script>
-<script src="assets/plugins/charts-c3/c3-chart.js"></script>
+    <!-- SIDEBAR JS -->
+    <script src="assets/plugins/sidebar/sidebar.js"></script>
 
-<!-- INPUT MASK JS-->
-<script src="assets/plugins/input-mask/jquery.mask.min.js"></script>
+    <!-- SIDE-MENU JS -->
+    <script src="assets/plugins/sidemenu/sidemenu.js"></script>
 
-<!-- SIDEBAR JS -->
-<script src="assets/plugins/sidebar/sidebar.js"></script>
+    <!-- CUSTOM SCROLL BAR JS-->
+    <script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
 
-<!-- SIDE-MENU JS -->
-<script src="assets/plugins/sidemenu/sidemenu.js"></script>
+    <!-- CUSTOM JS-->
+    <script src="assets/js/custom.js"></script>
 
-<!-- CUSTOM SCROLL BAR JS-->
-<script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- SELECT2 JS -->
+    <script src="assets/plugins/select2/select2.full.min.js"></script>
 
-<!-- CUSTOM JS-->
-<script src="assets/js/custom.js"></script>
+    <!-- BOOTSTRAP-DATERANGEPICKER JS -->
+    <script src="assets/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+    <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-<!-- SELECT2 JS -->
-<script src="assets/plugins/select2/select2.full.min.js"></script>
+    <!-- TIMEPICKER JS -->
+    <script src="assets/plugins/time-picker/jquery.timepicker.js"></script>
+    <script src="assets/plugins/time-picker/toggles.min.js"></script>
 
-<!-- BOOTSTRAP-DATERANGEPICKER JS -->
-<script src="assets/plugins/bootstrap-daterangepicker/moment.min.js"></script>
-<script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- DATEPICKER JS -->
+    <script src="assets/plugins/date-picker/spectrum.js"></script>
+    <script src="assets/plugins/date-picker/jquery-ui.js"></script>
+    <script src="assets/plugins/input-mask/jquery.maskedinput.js"></script>
 
-<!-- TIMEPICKER JS -->
-<script src="assets/plugins/time-picker/jquery.timepicker.js"></script>
-<script src="assets/plugins/time-picker/toggles.min.js"></script>
+    <!-- MULTI SELECT JS-->
+    <script src="assets/plugins/multipleselect/multiple-select.js"></script>
+    <script src="assets/plugins/multipleselect/multi-select.js"></script>
 
-<!-- DATEPICKER JS -->
-<script src="assets/plugins/date-picker/spectrum.js"></script>
-<script src="assets/plugins/date-picker/jquery-ui.js"></script>
-<script src="assets/plugins/input-mask/jquery.maskedinput.js"></script>
+    <!-- FORMELEMENTS JS -->
+    <script src="assets/js/form-elements.js"></script>
 
-<!-- MULTI SELECT JS-->
-<script src="assets/plugins/multipleselect/multiple-select.js"></script>
-<script src="assets/plugins/multipleselect/multi-select.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="assets/js/custom.js"></script>
+    <!-- SUMMERNOTE JS -->
+    <script src="assets/plugins/summernote/summernote-bs4.js"></script>
+    <!-- WYSIWYG Editor JS -->
+    <script src="assets/plugins/wysiwyag/jquery.richtext.js"></script>
+    <script src="assets/plugins/wysiwyag/wysiwyag.js"></script>
 
-<!-- FORMELEMENTS JS -->
-<script src="assets/js/form-elements.js"></script>
+    <!-- SUMMERNOTE JS -->
+    <script src="assets/plugins/summernote/summernote-bs4.js"></script>
 
-<!-- CUSTOM JS -->
-<script src="assets/js/custom.js"></script>
+    <!-- FORMEDITOR JS -->
+    <script src="assets/js/summernote.js"></script>
+    <script src="assets/js/formeditor.js"></script>
+    <!-- FILE UPLOADES JS -->
+    <script src="assets/plugins/fileuploads/js/fileupload.js"></script>
+    <script src="assets/plugins/fileuploads/js/file-upload.js"></script>
+
+
+
 
 
 </body>

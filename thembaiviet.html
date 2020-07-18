@@ -481,8 +481,8 @@
                 <!-- PAGE-HEADER END -->
 
                 <!-- CONTENT -->
-                <div class="row justify-content-center">
-                    <div class="col-lg-10 col-xl-10 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
                         <div class="card">
                             <div class="card-header">
                                 <h3 class="card-title">Thông tin bài viết</h3>
@@ -490,60 +490,92 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-md-5">
-                                                <div class="form-group">
-                                                    <label for="">Tiêu đề: </label>
-                                                    <input type="text" class="form-control" id="" placeholder="Nhập tiêu đề">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="">Danh mục bài viết: </label>
-                                                    <select name="" id="" class="form-control">
-                                                        <option value=""></option>
-                                                        <option value="">Danh mục 1</option>
-                                                        <option value="">Danh mục 2</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="">Ngày đăng: </label>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <div class="input-group-text">
-                                                                <i class="fa fa-calendar tx-16 lh-0 op-6"></i>
-                                                            </div>
-                                                        </div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="">Trạng thái: </label>
-                                                    <label class="custom-control custom-switch success" style="transform: translateY(3px)">
-                                                        <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
-                                                        <span class="custom-switch-indicator"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-5 col-md-5">
-                                                <div class="form-group">
-                                                    <label for="">Ảnh đại diện: </label>
-                                                    <input type="file" class="dropify" data-height="300" />
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                
-                                                <div class="form-group">
-                                                    <label for="">Nội dung bài viết: </label>
-                                                    <div id="summernote"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum beatae, voluptatem fugit similique nesciunt unde? Doloribus, dolores blanditiis minus mollitia laudantium, officia vitae consequuntur rem accusantium deleniti fuga molestias facilis. </div>
-                                                </div>
-                                            </div>
+                                        <div class="form-group">
+                                            <label for="">Tiêu đề: </label>
+                                            <input type="text" class="form-control" id="" placeholder="Nhập tiêu đề">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Nội dung bài viết:     </label>
+                                            <div id="summernote"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum beatae, voluptatem fugit similique nesciunt unde? Doloribus, dolores blanditiis minus mollitia laudantium, officia vitae consequuntur rem accusantium deleniti fuga molestias facilis. </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-footer text-right">
-                                    <a href="#" class="btn btn-success mt-1">Tạo bài viết</a>
-                                    <a href="#" class="btn btn-danger mt-1">Hủy</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Gửi thông báo</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="">Tình trạng thông báo:</label>
+                                    <p><i>Thông báo ngày: 10/10/2020</i></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Đối tượng</label>
+                                    <div class="custom-controls-stacked d-flex justify-content-between">
+                                        <label class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" name="example-radios" value="option1" checked>
+                                            <span class="custom-control-label">Khách hàng</span>
+                                        </label>
+                                        <label class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" name="example-radios" value="option2">
+                                            <span class="custom-control-label">Shipper</span>
+                                        </label>
+                                        <label class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" name="example-radios" value="option3">
+                                            <span class="custom-control-label">Chủ cửa hàng</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button class="btn btn-outline-success"><i class="fe fe-bell"></i> Gửi thông báo</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Hành động</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="">Danh mục bài viết: </label>
+                                    <select name="" id="" class="form-control">
+                                        <option value=""></option>
+                                        <option value="">Danh mục 1</option>
+                                        <option value="">Danh mục 2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Ngày đăng: </label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+                                            </div>
+                                        </div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Trạng thái: </label>
+                                    <label class="custom-control custom-switch success" style="transform: translateY(3px)">
+                                        <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
+                                        <span class="custom-switch-indicator"></span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Ảnh đại diện: </label>
+                                    <input type="file" class="dropify" data-height="300" />
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col d-flex mb-3 justify-content-end">
+                        <a href="#" class="btn btn-success">Tạo bài viết</a>
+                        <a href="#" class="btn btn-danger ml-2">Hủy</a>
                     </div>
                     <!-- END CONTENT -->
 
