@@ -323,11 +323,11 @@
                 <!-- PAGE-HEADER -->
                 <div class="page-header">
                     <div>
-                        <h1 class="page-title">Chi tiết combo (thêm combo)</h1>
+                        <h1 class="page-title">In tem mã</h1>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Bài viết</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Chi tiết combo</li>
+                            <li class="breadcrumb-item"><a href="#">Cửa hàng</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">In mã</li>
                         </ol>
                     </div>
                     <div class="d-flex  ml-auto header-right-icons header-search-icon">
@@ -485,33 +485,6 @@
                     <div class="col-lg-7 col-xl-7 col-md-12 col-sm-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Thông tin combo</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label for="">Tiêu đề: </label>
-                                            <input type="text" class="form-control" id="" placeholder="Nhập tiêu đề">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Danh mục bài viết: </label>
-                                            <select name="" id="" class="form-control">
-                                                <option value=""></option>
-                                                <option value="">Danh mục 1</option>
-                                                <option value="">Danh mục 2</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Nội dung bài viết: </label>
-                                            <div id="summernote"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum beatae, voluptatem fugit similique nesciunt unde? Doloribus, dolores blanditiis minus mollitia laudantium, officia vitae consequuntur rem accusantium deleniti fuga molestias facilis. </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
                                 <h3 class="card-title">Nguyên liệu</h3>
                             </div>
                             <div class="card-body">
@@ -519,14 +492,15 @@
                                     <table class="table card-table table-vcenter text-nowrap">
                                         <tr>
                                             <th>STT</th>
-                                            <th>Loại nhiên liệu</th>          
+                                            <th>Mã sản phẩm</th>          
+                                            <th>Tên sản phẩm</th>
                                             <th>Số lượng</th>
-                                            <th>Đơn Vị</th>
                                             <th></th>
                                         </tr>
                                         <tbody>
                                             <tr>
                                                 <th>1</th>
+                                                <td>ABSK01</td>
                                                 <td>
                                                     <select name="" id="" class="form-control">
                                                         <option value="">Gà</option>
@@ -534,10 +508,31 @@
                                                 </td>
                                                 <td>10</td>
                                                 <td>
+                                                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>1</th>
+                                                <td>ABSK01</td>
+                                                <td>
                                                     <select name="" id="" class="form-control">
-                                                        <option value="">kg</option>
+                                                        <option value="">Gà</option>
                                                     </select>
                                                 </td>
+                                                <td>10</td>
+                                                <td>
+                                                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>1</th>
+                                                <td>ABSK01</td>
+                                                <td>
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="">Gà</option>
+                                                    </select>
+                                                </td>
+                                                <td>10</td>
                                                 <td>
                                                     <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
                                                 </td>
@@ -551,39 +546,42 @@
                     <div class="col-lg-5 col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Hành động</h3>
+                                <h3 class="card-title">Nội dung in</h3>
                             </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label for="">Trạng thái: </label>
-                                            <label class="custom-control custom-switch success" style="transform: translateY(3px)">
-                                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
-                                                <span class="custom-switch-indicator"></span>
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Loại bài viết: </label>
-                                            <span>Combo</span>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Danh mục bài viết: </label>
-                                            <select name="" id="" class="form-control">
-                                                <option value="">Chọn danh mục bài viết</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Hình ảnh: </label>
-                                            <input type="file" class="dropify" data-height="300" />
-                                        </div>
+                                    <div class="col-12 d-flex flex-wrap">
+                                        <label class="custom-control custom-checkbox ml-3 d-block">
+                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                            <span class="custom-control-label">Mã hàng</span>
+                                        </label>
+                                        <label class="custom-control custom-checkbox ml-3 d-block">
+                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                            <span class="custom-control-label">Mã vạch</span>
+                                        </label>
+                                        <label class="custom-control custom-checkbox ml-3 d-block">
+                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                            <span class="custom-control-label">Giá tiền</span>
+                                        </label>
+                                        <label class="custom-control custom-checkbox ml-3 d-block">
+                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                            <span class="custom-control-label">Đơn vị</span>
+                                        </label>
+                                        <label class="custom-control custom-checkbox ml-3 d-block">
+                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                            <span class="custom-control-label">Đơn vị tiền</span>
+                                        </label>
+                                        <label class="custom-control custom-checkbox ml-3 d-block">
+                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                            <span class="custom-control-label">Tên cửa hàng</span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 mb-3 d-flex justify-content-end">
-                        <a href="#" class="btn btn-success">Tạo bài viết</a>
+                        <a href="#" class="btn btn-success"><i class="fa fa-barcode"></i> Tạo mã</a>
                         <a href="#" class="btn btn-danger ml-2">Hủy</a>
                     </div>
                     <!-- END CONTENT -->
